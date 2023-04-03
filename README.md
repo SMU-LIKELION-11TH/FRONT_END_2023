@@ -25,9 +25,11 @@
 ## 💻 프론트엔드 운영진 💻
 
 |회장| | | |
-|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|
 |이혜린|김연출|김지영|윤석현|
-|<img src="https://user-images.githubusercontent.com/77167694/167535246-1573ad95-cbb1-46b4-b578-63ad5bb19b4f.png" width="120" height="120"/> |<img src="https://user-images.githubusercontent.com/77167694/167535433-3c9ecc8f-5e51-4d41-ae63-8d0f55b58cf9.png" width="120" height="120"/> | <img src="https://user-images.githubusercontent.com/77167694/167535257-0c0ef476-7aa4-45c2-badb-7800584b0759.png" width="130" height="120"/>|
+|<img src="https://user-images.githubusercontent.com/77167694/167535246-1573ad95-cbb1-46b4-b578-63ad5bb19b4f.png" width="120" height="120"/> |<img src="https://user-images.githubusercontent.com/77167694/167535433-3c9ecc8f-5e51-4d41-ae63-8d0f55b58cf9.png" width="120" height="120"/> | <img src="https://user-images.githubusercontent.com/77167694/167535257-0c0ef476-7aa4-45c2-badb-7800584b0759.png" width="130" height="120"/>|<img src="https://user-images.githubusercontent.com/77167694/167535257-0c0ef476-7aa4-45c2-badb-7800584b0759.png" width="130" height="120"/>|
+
+
 
  ### 🗣 질문이 있다면 ?? 프론트엔드 단톡방으로 !! <br/>
 </div>
