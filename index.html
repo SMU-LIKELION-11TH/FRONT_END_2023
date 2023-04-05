@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김용민</title>
+    <style>
+      .form {
+        border: 1px solid black;
+        padding: 2rem;
+        max-width: 500px;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+      }
+      h3 {
+        margin: 20px 0 0 0;
+      }
+      .fruit-picker {
+        display: flex;
+        flex-direction: column;
+      }
+      .button-control {
+        margin-top: 20px;
+      }
+      .link-connect {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>로그인 화면 만들어보기</h1>
+    <form class="form">
+      <div class="form-control">
+        <label for="ID"><h3>ID</h3></label>
+        <input type="text" id="ID" />
+      </div>
+      <div class="form-control">
+        <label for="PW"><h3>PASSWORD</h3></label>
+        <input type="password" id="PW" />
+      </div>
+      <div class="radio-control">
+        <h3>성별</h3>
+        <label for="boy">남자</label><input type="radio" id="boy" />
+        <label for="girl">여자</label><input type="radio" id="girl" />
+      </div>
+      <div class="fruit-picker">
+        <h3>좋아하는 과일 선택</h3>
+        <div>
+          <label for="apple">사과🍎</label>
+          <input type="checkbox" id="apple" />
+        </div>
+        <div>
+          <label for="pineapple">파인애플🍍</label>
+          <input type="checkbox" id="pineapple" />
+        </div>
+        <div>
+          <label for="grape">포도🍇</label>
+          <input type="checkbox" id="grape" />
+        </div>
+        <div>
+          <label for="kiwi">키위🥝</label>
+          <input type="checkbox" id="kiwi" />
+        </div>
+        <div>
+          <label for="banana">바나나🍌</label>
+          <input type="checkbox" id="banana" />
+        </div>
+      </div>
+      <div class="button-control">
+        <button class="submit">SUBMIT</button>
+      </div>
+    </form>
+    <br />
+    <div class="link-connect">
+      <div>1. <a href="https://www.instagram.com/">인스타그램</a></div>
+      <div>2. <a href="https://www.facebook.com/">페이스북</a></div>
+      <div>3. <a href="https://github.com/">깃허브</a></div>
+    </div>
+  </body>
+</html>
