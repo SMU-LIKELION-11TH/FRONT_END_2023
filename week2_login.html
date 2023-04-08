@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문재영</title>
+    <style>
+        form {
+            border: 1px solid black;
+            padding: 2rem;
+            max-width: 500px;
+            width: fit-content;
+            height: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>로그인 화면 만들어보기</h1>
+    <div>
+        <form>
+        <p>
+            <label for="ID">
+                <strong>ID</strong><br>
+                <input type="text" name="ID" value=""><br>
+            </label>
+            <label for="PASSWORD">
+                <strong>PASSWORD</strong><br>
+                <input type="password" name="PASSWORD" value="">
+            </label>
+        </p>
+
+        <p>
+            <label for="gender">
+                <strong>성별</strong><br>
+                <radio>
+                    남자 <input type="radio" name="gender" value="man">
+                    여자 <input type="radio" name="gender" value="woman">
+                </radio>
+            </label>
+        </p>
+
+        <p>
+            <label for="fruit">
+                <strong>좋아하는 과일 선택</strong><br>
+                <checkbox>
+                    사과 🍎 <input type="checkbox" name="fruit" value="apple"> <br>
+                    파인애플 🍍 <input type="checkbox" name="fruit" value="pineapple"> <br>
+                    포도🍇 <input type="checkbox" name="fruit" value="grape"> <br>
+                    키위🥝 <input type="checkbox" name="fruit" value="grape"> <br>
+                    바나나🍌 <input type="checkbox" name="fruit" value="banana"> <br>
+                </checkbox>  
+            </label>
+        </p>
+                    
+        <p>
+            <button type="button">submit</button>
+            <!-- submit  <input type="button">  <input type="submit">  -->
+            <!-- 이 줄은 띄어쓰기 한게 웹에서 적용이 되네요 -->
+        </p>
+        </form>
+    </div>
+
+
+    <ol>
+        <li> 
+            <a href="https://www.instagram.com/" target="_blank">
+            인스타그램
+            </a>
+        </li>
+        <li> 
+            <a href="https://www.facebook.com/" target="_blank">
+            페이스북
+            </a>
+        </li>
+        <li> 
+            <a href="https://github.com/" target="_blank">
+            깃허브
+            </a>
+        </li>
+    </ol>
+
+    </body>
+
+</html>
