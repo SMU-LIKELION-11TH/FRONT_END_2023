@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이명진</title>
+    <script src="https://kit.fontawesome.com/8ad806b1f5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <h1>로그인 화면 만들어보기</h1>
+    <style>
+        form {
+            border: 1px solid black;
+            padding: 2rem;
+            max-width: 500px;
+            width: fit-content;
+            height: fit-content;
+        }
+    </style>
+    <form>
+        <b>ID</b><br><input type="text" name="ID" /><br>
+        <b>PASSWORD</b><br><input type="text" name="password" /><br><br>
+        <div>
+            <b>성별</b><br>
+            <label for="gender">
+                남자<input type="radio" name="gender" />
+            </label>
+            <label for="gender">
+                여자<input type="radio" name="gender" /><br><br>
+            </label>
+        </div>
+        <!-- radio버튼 중복X => name값 같게 해주면 된다. 또는 label for=""와 input id=""를 같게 해준다.-->
+        <div>
+            <b>좋아하는 과일 선택</b><br>
+            사과<i class="fa-solid fa-apple-whole"></i><input type="checkbox" name="checkbox1" /><br>
+            파인애플<i class="fa-brands fa-apple"></i><input type="checkbox" name="checkbox2" /><br>
+            포도<i class="fa-brands fa-figma"></i><input type="checkbox" name="checkbox3" /><br>
+            키위<i class="fa-regular fa-lemon"></i><input type="checkbox" name="checkbox4" /><br>
+            바나나<i class="fa-solid fa-b"></i><input type="checkbox" name="checkbox5" /><br><br>
+        </div>
+        <input type="submit" value="SUBMIT">
+    </form>
+    <div>
+        <ol>
+            <li><a href="https://www.instagram.com/" target="_blank">인스타그램</a></li>
+            <li><a href="https://ko-kr.facebook.com/" target="_blank">페이스북</a></li>
+            <li><a href="https://github.com/" target="_blank">깃허브</a></li>
+        </ol>
+    </div>
+</body>
+
+</html>
