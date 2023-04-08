@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiwon Jeong</title>
+    <style>
+      /* 웹폰트 설치 */
+      @font-face {
+          font-family: 'NanumSquareNeo-Variable';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      /* CSS 초기화 */
+      body * {
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: "NanumSquareNeo-Variable";
+        padding: 0;
+        margin: 0;
+        display: block;
+      }
+
+      li {
+        display: list-item;
+      }
+
+      h1 {
+        font-weight: 1000;
+      }
+
+      .main-title {
+        font-size: 2rem;
+        margin: 20px auto;
+      }
+    
+      form {
+        border: 1px solid black;
+        padding: 2rem;
+        max-width: 500px;
+        width: fit-content;
+        height: fit-content;
+      }
+
+      form div {
+        width: 80%;
+        padding: 7px 0;
+      }
+
+      .idpw-box {
+        margin: 10px 0 15px;
+      }
+
+      .idpw-box h1, input {
+        padding: 2px 0;
+      }
+
+      .gender-box .gender-checkbox {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .fruit-box .fruit-checkbox label {
+        display: flex;
+        /* justify-content: space-between; */
+      }
+
+      .fruit-box .fruit-checkbox input {
+        margin-left: 10px;
+      }
+
+      .submit button {
+        padding: 2px 5px;
+      }
+
+      .links {
+        margin-left: 30px;
+        margin-top: 20px;
+      }
+
+      .links ol li {
+        padding: 2px 0;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1 class="main-title">로그인 화면 만들어보기</h1>
+    <form>
+      <div class="idpw-box">
+        <h1>ID</h1>
+        <input type="text">
+        <h1>PASSWORD</h1>
+        <input type="password">
+      </div>
+      <div class="gender-box">
+        <h1>성별</h1>
+        <div class="gender-checkbox">
+          <label for="gender-male">남자</label>
+          <input type="radio" id="gender-checkbox1" name="gender-checkbox">
+          <label for="gender-female">여자</label>
+          <input type="radio" id="gender-checkbox2" name="gender-checkbox">
+        </div>
+      </div>
+      <div class="fruit-box">
+        <h1>좋아하는 과일 선택</h1>
+        <div class="fruit-checkbox">
+          <label>사과&#x1f34e
+            <input type="checkbox" name="apple" id="apple">
+          </label>
+          <label>파인애플&#x1f34d
+            <input type="checkbox" name="pineapple" id="pineapple">
+          </label>
+          <label>포도&#x1f347
+            <input type="checkbox" name="grape" id="grape">
+          </label>
+          <label>키위&#x1f95d
+            <input type="checkbox" name="kiwi" id="kiwi">
+          </label>
+          <label>바나나&#x1f34c
+            <input type="checkbox" name="banana" id="banana">
+          </label>
+        </div>
+      </div>
+      <div class="submit">
+        <button type="button">SUBMIT</button> <!-- 새로고침 방지 -->
+      </div>
+    </form>
+    <div class="links">
+      <ol>
+        <li><a href="https://www.instagram.com">인스타그램</a></li>
+        <li><a href="https://www.facebook.com">페이스북</a></li>
+        <li><a href="https://www.github.com">깃허브</a></li>
+      </ol>
+    </div>
+  </body>
+</html>
