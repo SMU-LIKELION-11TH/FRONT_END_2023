@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--멋쟁이 사자처럼 2주차 과제-->
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8"> <!--전세계의 문자를 모두 지원하겠다는 의미-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--호환성을 맞추겠다.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--너비, 폰트 등을 쓰고 있는 장비에 맞추겠다.-->
+    <style>
+	    form {
+	      border: 1px solid black;
+	      padding: 2rem;
+	      max-width: 500px;
+	      width: fit-content;
+	      height: fit-content;
+	    }
+	</style>
+    <title>민기홍</title>
+</head>
+
+<body>
+    <h1>로그인 화면 만들어보기</h1>
+    <form>
+        <p>
+        <label for="ID"><strong>ID</strong></label><br>
+        <input type="text" id="ID" name="ID"><br>
+        <label for="PassWord"><strong>PassWord</strong></label><br>
+        <input type="password" id="PassWord" name="PassWord"><br>
+        </p>
+        <p>
+        <strong>성별</strong><br>
+        <label for="male">남자</label>
+        <input type="radio" id="male" name="gender">
+        <label for="female">여자</label>
+        <input type="radio" id="female" name="gender">
+        </p>
+        <p>
+            <b>좋아하는 과일 선택</b><br>
+            <label for="apple">사과&#x1f34e</label>
+            <input type="checkbox" id="apple" name="fruit"><br>
+            <label for="pineapple">파인애플&#x1F34D</label>
+            <input type="checkbox" id="pineapple" name="fruit"><br>
+            <label for="grapes">포도&#x1F347</label>
+            <input type="checkbox" id="grapes" name="fruit"><br>
+            <label for="kiwi">키위&#x1F95D</label>
+            <input type="checkbox" id="kiwi" name="fruit"><br>
+            <label for="banana">바나나&#x1F34C</label>
+            <input type="checkbox" id="banana" name="fruit"><br>
+        </p>
+        
+        <div>
+            <input type="submit" value="SUBMIT">
+        </div>
+    </form>
+    <ol>
+        <li><a href="https://www.instagram.com/">인스타그램</a></li>
+        <li><a href="https://www.facebook.com/">페이스북</a></li>
+        <li><a href="https://github.com/">깃허브</a></li>
+    </ol>
+
+</body>
+
+</html>
+
+<!-- 마우스 커서가 깜빡거리는 곳을 주석 처리하는 법: ctrl + /-->
