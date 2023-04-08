@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Log-In 민경</title>
+        <style>
+            h1{
+                font-size: 48px;
+                text-align: center;
+            }
+            li{
+                list-style: none;
+            }
+            .field{
+                width:280px;
+                padding:10px;
+                margin-bottom:10px;
+            }
+            .submit{
+                width:300px;
+                padding:10px;
+                border-radius:5px;
+                background-color: orange;
+                border:none;
+                font-size: 18px;
+                margin-top: 10px;
+                
+            }
+            form{
+                border : 1px solid;
+                padding:2rem;
+                width: fit-content;
+                height: fit-content;
+            }
+            label{
+                font-size:16px;
+                color:gray;
+                position:relative;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>LIKELION</h1>
+            <label for="radio">
+                <input type="radio" id = "radio">재학생
+                <input type="radio" id = "radio">졸업생<br>
+            </label>
+                <input type="text" id="id" placeholder="ID" class = "field" readonly><br>
+                <input type="text" id="pw" placeholder="PW" class = "field"readonly><br>
+            <label for="check">
+                <input type="checkbox" id = "check">로그인 상태 유지<br>
+            </label>
+                <input type="submit" id = "submit" class = "submit" value = "Login">
+        </form>
+        <ol>
+            <li><a href="https://github.com/minggwen/FRONT_END_2023">깃허브 커몬</a></li>
+        </ol>
+        
+        
+    </body>
+    
+</html>
