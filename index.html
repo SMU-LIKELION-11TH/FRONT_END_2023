@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강윤진</title> 
+    <style>
+        form {
+          border: 1px solid black;
+          padding: 2rem;
+          max-width: 200px;
+          width: fit-content;
+          height: fit-content;
+        }
+        input[type="text"], input[type="password"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid black;
+          border-radius: 3px;
+          box-sizing: border-box;
+        }
+        input[type="submit"] {
+        background-color:whitesmoke;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+        label {
+          display: inline-block;
+          margin-bottom: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+          display: inline-block;
+          margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>로그인 화면 만들어보기</h1>
+        <form>
+        <strong><label for="id">ID</label></strong>
+        <input type="text" id="id" name="id">
+        <strong><label for="password">PASSWORD</label></strong>
+        <input type="password" id="password" name="password">
+        <strong><label>성별</label></strong>
+        <br>
+        <label for="male">남자</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">여자</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <br>
+        <br>
+        <strong><label>좋아하는 과일선택</label></strong>
+        <br>
+        <label for="apple">사과🍎</label>
+        <input type="checkbox" id="apple" name="fruits[]" value="apple">
+        <br>
+        <label for="pineapple">파인애플🍍</label>
+        <input type="checkbox" id="pineapple" name="fruits[]" value="pineapple">
+        <br>
+        <label for="grape">포도🍇</label>
+        <input type="checkbox" id="grape" name="fruits[]" value="grape">
+        <br>
+        <label for="kiwi">키위🥝</label>
+        <input type="checkbox" id="kiwi" name="fruits[]" value="kiwi">
+        <br>
+        <label for="banana">바나나🍌</label>
+        <input type="checkbox" id="banana" name="fruits[]" value="banana">
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT">
+      </form>
+      <ol>
+        <li><a href ="https://www.instagram.com/likelion.official/">인스타그램</a></li>
+        <li><a href ="https://www.facebook.com/likelionSMU">페이스북</a></li>
+        <li><a href="https://github.com/SMU-LIKELION-11TH">깃허브</a></li>
+      </ol>
+      
+</body>
+</html>
