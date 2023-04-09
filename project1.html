@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정우현</title>
+    <style>
+        form {
+            border: 1px solid black;
+            padding: 2rem;
+            max-width: 500px;
+            width: fit-content;
+            height: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>로그인 화면 만들어보기</h1>
+    <form>
+        <strong>ID</strong><br><input type="text" name="id"><br>
+        <strong>PASSWORD</strong><br><input type="password" name="password">
+        <div>
+            <p><strong>성별</strong></p>
+            남자<input type="radio" name="gender" value="male">
+            여자<input type="radio" name="gender" value="female">
+        </div>
+        <div>
+            <p><strong>좋아하는 과일 선택</strong></p>
+            사과 &#x1F34E;<input type="checkbox" name="f" value="a"><br>
+            파인애플 &#x1F34D;<input type="checkbox" name="f" value="p"><br>
+            포도 &#x1F347;<input type="checkbox" name="f" value="g"><br>
+            키위 &#x1F95D;<input type="checkbox" name="f" value="k"><br>
+            바나나 &#x1F34C;<input type="checkbox" name="f" value="b">
+        </div>
+        
+        <form action='login_page.php'>
+            <br><input type='button' value="SUBMIT"/>
+        </form>
+    </form>
+    <ol>
+        <li>
+            <a href="https://www.instagram.com/" target="_blank">인스타그램</a></li>
+        <li>
+            <a href="https://ko-kr.facebook.com/" target="_blank">페이스북</a></li>
+        <li>
+            <a href="https://github.com/" target="_blank">깃허브</a></li>
+    </ol>
+
+</body>
+
+</html>
