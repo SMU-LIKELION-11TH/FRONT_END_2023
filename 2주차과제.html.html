@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박서경</title>
+</head>
+
+<style>
+    form {
+        border: 1px solid black;
+        padding: 2rem;
+        max-width: 500px;
+        width: fit-content;
+        height: fit-content;
+    }
+</style>
+
+
+<body>
+    <h1>로그인 화면 만들어보기</h1>
+    <div>
+        <form>
+            <p>
+                <label for="nameid"><strong>ID</strong></label><br>
+                <input type = "text" id="nameid" name="name">
+            </p>
+            <p>
+                <label for="pwid"><strong>PASSWORD</strong></label><br>
+                <input type="password" id="pwid" name="password">
+            </p>
+            <div>
+                <p>
+                    <strong>성별</strong><br>
+                    <label> 남자 <input type="radio" name="gender" value="M"></label>
+                    <label> 여자 <input type="radio" name="gender" value="F"></label>
+                </p>
+                <label>
+                    <strong>좋아하는 과일 선택</strong><br>
+                    <label> 사과🍎 <input type="checkbox" name="fruit" value="apple"></label><br>
+                    <label> 파인애플🍍 <input type="checkbox" name="fruit" value="pine"></label><br>
+                    <label> 포도🍇 <input type="checkbox" name="fruit" value="grape"></label><br>
+                    <label> 키위🥝 <input type="checkbox" name="fruit" value="kiwi"></label><br>
+                    <label> 바나나🍌 <input type="checkbox" name="fruit" value="banana"></label>
+                </p>
+            </div>
+            <p>
+                <input type="submit" value="SUBMIT">
+            </p>
+        </form>
+    </div>
+    <div>
+        <ol>
+            <li>
+                <a href="https://www.instagram.com/" 
+                target="_blank"> 인스타그램</a>
+            </li>
+            <li>
+                <a href="https://ko-kr.facebook.com/"
+                target="_blank"> 페이스북</a>
+            </li>
+            <li>
+                <a href="https://github.com/"
+                target="_blank"> 깃허브</a>
+            </li>
+        </ol>
+    </div>
+    
+</body>
+</html>
