@@ -3,6 +3,26 @@
   box-sizing: border-box;
 }
 
+/* blur Effect */
+.container {
+  filter: blur(0px);
+  position: relative;
+  margin: 10px 0;
+  z-index: -1;
+  padding: 15px;
+}
+
+.blurText {
+  filter: 0px;
+  position: absolute;
+  top: 350px;
+  left: 40%;
+  display: block;
+  margin: auto;
+  font-size: 80px;
+  display: inline;
+}
+
 .subTitle {
   font-size: 28px;
   margin-left: 10px;
