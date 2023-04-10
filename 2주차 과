@@ -1,0 +1,15 @@
+<body>
+    <div class="login">
+        <h2>Login</h2>
+        <form method="post" action="서버의url" id="login-form">
+            <input type="text" name="userName" placeholder="Email">
+            <input type="password" name="userPassword" placeholder="Password">
+            <label for="remember-check">
+                <input type="checkbox" id="remember-check">
+            </label>
+            <a href="index_page.html">
+                <input type="submit" value="Login">
+            </a>
+        </form>
+    </div>
+</body>
