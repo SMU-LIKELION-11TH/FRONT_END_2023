@@ -4,82 +4,138 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./index.css" />
     <script src="./index.js" defer></script>
-    <title>나의 이력서</title>
+
+    <title>저는 이런 사람입니다~</title>
   </head>
   <body>
     <div class="blurText">로딩중입니다</div>
-    <div class="container">
-      <div class="imgContainer">
-        <img class="profile" src="./img/Profile.jpeg" alt="Profile-Image" />
-        <span class="text">텍스트 내용입니다.</span>
-        <span
-          >새로고침시<span class="info">Blur Loading Effect</span>를 확인하실 수
-          있습니다.</span
-        >
-      </div>
-      <br />
-      <div class="detailInfoContainer">
-        <h3 class="subTitle">👀 상세 정보</h3>
-        <div class="line"></div>
-        <div><span class="info">이름</span> 김용민</div>
-        <div><span class="info">생일</span> 1999-07-14</div>
-        <div><span class="info">핸드폰</span> 010-5877-8951</div>
-        <div><span class="info">이메일</span> dydals3440@gmail.com</div>
-        <div><span class="info">인스타그램</span> @yong__min_kim</div>
-        <div><span class="info">GITHUB</span> dydals3440</div>
-      </div>
-      <br />
-      <div class="qualifyContainer">
-        <h3 class="subTitle">📚 자격정보</h3>
-        <div class="line"></div>
-        <div><span class="info">2012.03.16</span> GTQ(그래픽기술자격)2급</div>
-        <div><span class="info">2020.12.21</span> 자동차운전면허증</div>
-        <div><span class="info">2021.04.29</span> OA Master</div>
-        <div><span class="info">2021.06.18</span> 워드프로세서</div>
-        <div><span class="info">기간 만료(재시험 예정)</span> 토익: 950</div>
-      </div>
-      <br />
-      <div class="educationalHistoryContainer">
-        <h3 class="subTitle">🎓 학력사항</h3>
-        <div class="line"></div>
-        <div>
-          <span class="info">2018년 ~ 2024년 (졸업 예정)</span> Sangmyung
-          University(Business Administration)
+    <div class="main-box">
+      <div class="title-box">
+        <img class="picture" src="./img/Profile.jpeg" />
+        <div class="title-warp">
+          <h1 class="title-box-main">
+            안녕하세요✋ <br />
+            <div class="text">개발하는 경영학부</div>
+            김용민입니다.
+          </h1>
+          <p class="title-box-text">
+            <span
+              >새로고침시<span class="info"> Blur Loading Effect</span>를
+              확인하실 수 있습니다.</span
+            >
+          </p>
         </div>
       </div>
-      <br />
-      <div class="technicalContainer">
-        <h3 class="subTitle">🛠️ 기술들</h3>
-        <div class="line"></div>
-        <div class="technicalImageContainer">
-          <img class="technicalImage" src="./img/HTML.png" alt="HTML_IMG" />
-          <img class="technicalImage" src="./img/CSS.png" alt="CSS_IMG" />
-          <img class="technicalImage" src="./img/JS.png" alt="JS_IMG" />
-          <img class="technicalImage" src="./img/react.png" alt="REACT_IMG" />
-          <img class="technicalImage" src="./img/TS.webp" alt="TS_IMG" />
+
+      <section class="grid-container">
+        <div class="content-box">
+          <h2>👀 상세정보</h2>
+          <hr />
+          <p class="content-box-text">
+            <span class="content-box-text-title">이름</span> 김용민
+          </p>
+          <p class="content-box-text">
+            <span class="content-box-text-title">생일</span> 1999-07-14
+          </p>
+          <p class="content-box-text">
+            <span class="content-box-text-title">핸드폰</span> 010-5877-8951
+          </p>
+          <p class="content-box-text">
+            <span class="content-box-text-title">이메일</span>
+            dydals3440@gmail.com
+          </p>
+          <p class="content-box-text">
+            <span class="content-box-text-title">인스타그램</span>
+            @yong__min_kim
+          </p>
+          <p class="content-box-text">
+            <span class="content-box-text-title">GITHUB</span> dydals3440
+          </p>
         </div>
-        <div class="goalsContainer">
-          <h3 class="subTitle">🏃‍♂️ 목표들</h3>
-          <div class="line"></div>
-          <div><span class="info">1.</span> 깃허브 매일 커밋하기</div>
-          <div>
-            <span class="info">2.</span> 리액트 복습 하며 개인 블로그 제작
-          </div>
-          <div><span class="info">3.</span> 타입스크립트 1달안에 끝내기</div>
-          <div><span class="info">4.</span> 코딩테스트 매일 문제 풀기(JS)</div>
-          <div>
-            <span class="info">5.</span> Node.js/Next.js도 올해안에 공부해보기
-          </div>
-          <div>
-            <span class="info">6.</span> 토익 재시험/정보처리기사 자격증 준비
-          </div>
-          <div>
-            <span class="info">7.</span> 다양한 프로젝트(개발) 경험해보기
-          </div>
+
+        <div class="content-box">
+          <h2>📚 자격정보</h2>
+          <hr />
+          <p class="content-box-text">
+            <span class="content-box-text-title">2012.03.16</span>
+            GTQ(그래픽기술자격)2급 1급
+          </p>
+          <p class="content-box-text">
+            <span class="content-box-text-title">2020.12.21</span>
+            자동차운전면허증
+          </p>
+          <p class="content-box-text">
+            <span class="content-box-text-title">2021.04.29</span> OA Master
+          </p>
+          <p class="content-box-text">
+            <span class="content-box-text-title">2021.06.18</span> 워드프로세서
+          </p>
+          <p class="content-box-text">
+            <span class="content-box-text-title">기간 만료(재시험 예정)</span>
+            토익: 950
+          </p>
+        </div>
+
+        <div class="content-box">
+          <h2>🎓 학력사항</h2>
+          <hr />
+          <p class="content-box-text">
+            <span class="content-box-text-title"
+              >2018년 ~ 2024년 (졸업 예정)</span
+            >
+            Sangmyung University(Business Administration)
+          </p>
+        </div>
+
+        <div class="content-box">
+          <h2>🏃‍♂️ 목표들</h2>
+          <hr />
+          <p class="content-box-text">
+            <span class="content-box-text-title">1.</span> 깃허브 매일 커밋하기
+          </p>
+          <p class="content-box-text">
+            <span class="content-box-text-title">2.</span> 리액트 복습 하며 개인
+            블로그 제작
+          </p>
+          <p class="content-box-text">
+            <span class="content-box-text-title">3.</span> 타입스크립트 1달안에
+            완강!
+          </p>
+          <p>
+            <span class="content-box-text-title">4.</span> 코딩테스트 매일 문제
+            풀기(JS)
+          </p>
+          <p>
+            <span class="content-box-text-title">5.</span> Node.js/Next.js도
+            올해안에 공부해보기
+          </p>
+          <p>
+            <span class="content-box-text-title">6.</span> 토익 재시험 /
+            정보처리기사 자격증 준비
+          </p>
+          <p>
+            <span class="content-box-text-title">7.</span> 다양한 프로젝트(개발)
+            경험해보기
+          </p>
+        </div>
+      </section>
+
+      <div class="tool-box">
+        <h2>🛠 기술들</h2>
+        <hr />
+        <div class="tool-box-content">
+          <img class="tool-icon" src="./img/html.png" />
+          <img class="tool-icon" src="./img/css.png" />
+          <img class="tool-icon" src="./img/js.png" />
+          <img class="tool-icon" src="./img/react.png" />
+          <img class="tool-icon" src="./img/TS.webp" />
         </div>
       </div>
     </div>
   </body>
+  <footer>
+    <p>Copyright SANGMYUNG LIKELION 11TH All rights reserved.</p>
+  </footer>
 </html>

@@ -1,6 +1,6 @@
 // text Write Effect
 
-const text = '안녕하세요✋ 개발하는 경영학부 김용민입니다.';
+const text = '개발하는 경영학부';
 const textEl = document.querySelector('.text');
 
 let idx = 1;
@@ -20,7 +20,7 @@ function writeText() {
 }
 
 // Loading Blur Effect
-const container = document.querySelector('.container');
+const container = document.querySelector('.main-box');
 const blurText = document.querySelector('.blurText');
 
 let percentage = 0;
