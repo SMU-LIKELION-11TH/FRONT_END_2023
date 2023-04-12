@@ -1,0 +1,49 @@
+.main-box {
+  margin: 10px 150px 10px 150px;
+}
+
+.content-box-text-title {
+  color: blue;
+  font-weight: bold;
+}
+
+.title-box {
+  display: flex;
+}
+
+.title-warp {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.title-box-text {
+  display:inline-flex
+}
+
+.gird-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.content-box-text {
+  
+}
+
+.tool-box-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-content: space-between;
+  margin: 0px 300px;
+}
+
+.tool-icon {
+  width: 100px;
+  height: 100px;
+}
