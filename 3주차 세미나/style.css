@@ -1,0 +1,125 @@
+html {
+  font-size: 16px;
+  /* 16px defualt 값 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar {
+  background-color: #056cf2;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar_logo {
+  color: #f25d07;
+  font-weight: bold;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_menu {
+  flex: 6;
+}
+
+.navbar_menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar_logo_image {
+  margin-right: 8px;
+}
+
+.navbar_links {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar_logo {
+  flex: 1;
+}
+
+.navbar_logo .logo_btn {
+  color: #f25d07;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar_menu,
+  .navbar_links {
+    display: none;
+  }
+  .navbar_menu.active,
+  .navbar_links.active {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar_logo {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar_menu ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  ul li {
+    margin: 10px;
+    transition: translate 0.3s ease-in;
+  }
+  ul li:hover {
+    transform: translateY(-10px);
+    background-color: #6d6d6d;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}

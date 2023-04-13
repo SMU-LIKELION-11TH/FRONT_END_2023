@@ -1,0 +1,94 @@
+.content-box-text-title {
+  color: blue;
+  font-weight: bold;
+}
+
+.main-box {
+  margin: auto;
+  filter: blur(0px);
+  position: relative;
+  width: 90%;
+  border: 1px solid none;
+  border-radius: 10%;
+  padding: 15px;
+  background-color: antiquewhite;
+  z-index: -1;
+}
+
+.picture {
+  width: 300px;
+  height: 300px;
+}
+
+.title-box-main {
+  margin-left: 70px;
+}
+
+.title-box-text {
+  margin-left: 30px;
+}
+
+.info {
+  color: blue;
+  font-weight: bold;
+}
+
+.blurText {
+  filter: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  margin: auto;
+  font-size: 80px;
+  display: inline;
+}
+
+.tool-icon {
+  width: 100px;
+  height: 100px;
+}
+
+/* title section */
+.title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blurText {
+  filter: 0px;
+  position: absolute;
+  top: 350px;
+  left: 40%;
+  display: block;
+  margin: auto;
+  font-size: 80px;
+  display: inline;
+}
+
+.picture {
+  border-radius: 100%;
+  margin: 10px;
+}
+
+/* grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 48%;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+/* toolSection */
+.tool-box-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Footer Section */
+footer p {
+  margin-top: 30px;
+  text-align: center;
+}
