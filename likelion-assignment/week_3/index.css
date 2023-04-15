@@ -1,0 +1,101 @@
+/* 웹폰트 설치 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+body {
+  background-color: #E3E8E8;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.main-box {
+  margin: 40px auto;
+  width: 1000px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #BEC1C1;
+}
+
+.title-box {
+  height: 300px;
+  line-height: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 50px 0 50px;
+}
+
+.picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px #C3C3C3;
+  margin-top: 50px;
+}
+
+.title-wrap {
+  text-align: center;
+  margin-top: 40px;
+  margin-right: 60px;
+}
+
+.title-box-main {
+  height: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.title-box-text {
+  height: 20px;
+}
+
+
+.grid-container {
+  width: 940px;
+  display: grid;
+  grid-template-columns: 470px 470px;
+  grid-template-rows: 330px 330px;
+  margin: auto;
+}
+
+.grid-container h2 , .tool-box h2 {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.content-box {
+  margin: 0 20px;
+}
+
+.content-box-text {
+  margin: 20px auto;
+}
+
+.content-box-text-title {
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.tool-box {
+  width: 940px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.tool-box-content {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.tool-icon {
+  width: 80px;
+  height: 80px;
+}
+
+footer {
+  margin: 30px auto;
+  height: 60px;
+  text-align: center;
+}
+
+footer p {
+  line-height: 20px;
+}
