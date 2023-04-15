@@ -8,10 +8,8 @@ body{
 .title-box{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
   text-align: center;
+  align-items: center;
 }
 
 .picture{
@@ -24,7 +22,8 @@ body{
 }
 
 .title-wrap{
-
+  width: 100%;
+  text-align: center;
 }
 
 .title-box-main{
