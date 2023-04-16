@@ -1,0 +1,55 @@
+.content-box-text-title {
+  color: black;
+  font-weight: bold;
+}
+
+.content-box-text {
+  
+}
+
+.gird-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+}
+
+.tool-box-content {
+  display: flex;
+  justify-content: center;
+}
+
+.tool-icon {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+.main-box {
+  padding: 100px;
+  margin: 100px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px 0px gray;
+  background-color: white;
+}
+
+.picture {
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px 0px gray;
+  margin-right: 120px;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+}
+
+.title-box-text {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+
+body {
+  background-color: gray;
+}
