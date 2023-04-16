@@ -1,0 +1,70 @@
+.main-box{
+  background-color: #BBDEFB;
+  width:1400px;
+  margin:auto;
+  border-radius: 30px;
+  box-shadow: 0px 3px 50px 0px;
+}
+
+
+.content-box-text-title {
+  font-weight: bold;
+}
+
+.title-box{
+  border-radius: 30px;
+  display:flex;
+}
+
+.picture{
+  background-color: aliceblue;
+  margin:auto;
+  margin-top:20px;
+  border-radius: 30px;
+  width:500px;
+  object-fit : scale-down;
+}
+.title-warp{
+  margin:auto;
+  text-align: center;
+}
+
+/* content */
+.gird-container{
+  border-radius: 30px;
+  display:grid;
+  grid: auto-flow / 1fr 1fr;
+  gap:4em;
+}
+
+.content-box{
+  display:block;
+  margin:50px;
+  margin-bottom : 100px;
+  
+}
+.content-box-text{
+  display:block;
+}
+
+
+/* tool */
+.tool-box{ 
+  margin:50px;
+  border-radius: 30px;
+  padding-bottom:40px;
+}
+.tool-box-content {
+  text-align: center;
+
+}
+.tool-box-content > .tool-icon{
+  padding-top:20px;
+  margin-left:50px;
+  width: 100px;
+  height: 100px;
+}
+
+footer> p{
+  text-align: center;
+}
