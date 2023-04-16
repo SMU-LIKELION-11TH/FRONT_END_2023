@@ -1,0 +1,31 @@
+.content-box-text-title {
+  color: black;
+  font-weight: bold;
+  height: 300px;
+  line-height: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 50px 0 50px
+}
+
+.content-box-text {
+}
+
+.tool-box-content {
+  width: 940px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.tool-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  height: 100px;
+}
+.grid-container{
+  width: 940px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+  /*justify-content:center;*/
+}
