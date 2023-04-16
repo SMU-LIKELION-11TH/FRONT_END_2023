@@ -1,0 +1,59 @@
+body{
+  background-color: rgb(138, 144, 229);
+}
+
+.picture {
+  object-fit: contain;
+  flex: 1;
+}
+
+.main-box{
+  margin: 40px;
+  padding: 50px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0px 2px 25px 4px;
+  min-width: 950px;
+}
+
+.title-box{
+  display: flex;
+  align-items: center;
+}
+
+.title-box-main{
+  display: inline-block;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.title-box-text{
+  text-align: center;
+}
+
+.content-box-text-title {
+  color: rgb(84, 3, 84);
+  font-weight: bold;
+}
+
+.content-box-text {
+  color: black;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tool-box-content {
+  display: flex;
+  justify-content: center;
+}
+
+.tool-icon {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+}
