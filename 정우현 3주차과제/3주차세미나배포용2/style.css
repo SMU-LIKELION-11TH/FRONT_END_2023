@@ -31,23 +31,19 @@ img {
 
 .navbar {
   background-color: #056cf2;
+  width: 100%;
+  height: fit-content;
+}
+
+.navbar {
+  background-color: #056cf2;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  width: 100%;
+  width: 100%; 
 }
 
-.navbar_menu{
-  flex: 6;
-}
-
-.navbar_links{
-  flex: 1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 .navbar_logo {
   color: #f25d07;
   font-weight: bold;
@@ -57,31 +53,48 @@ img {
   align-items: center;
 }
 
+.navbar_menu {
+  flex: 6;
+}
+
+.navbar_links {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar_menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
 .navbar_logo_image {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
   .navbar{
     flex-direction: column;
     padding: 1rem 0;
-    height: 300px;
   }
-}
 
-.navbar_menu ul{
-  display: flex;
-  justify-content: space-around;
-}
-ul li {
-  padding-bottom: 5px;
-}
+  .navbar_menu ul {
+    flex-direction: column;
+    padding: 0px;
+    text-align: center;
+  }
 
-ul li:hover{
-  background-color: #6d6d6d;
-  border-radius: 5px;
-  transform: translateX(-5px);
-  cursor: pointer;
+  ul li {
+    padding-bottom: 5px;
+  }
+
+  ul li:hover {
+    background-color: #6d6d6d;
+    border-radius: 5px;
+    transform: translateX(-5px);
+    cursor: pointer;
+  }
 }
 
 button {
@@ -90,11 +103,11 @@ button {
   cursor: pointer;
 }
 
-.navbar_logo{
+.navbar_logo {
   flex: 1;
 }
 
-.navbar_logo .logo_btn{
+.navbar_logo .logo_btn {
   color: #f25d07;
   font-weight: bold;
 
@@ -102,20 +115,15 @@ button {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 800px){
-  .navbar{
-    flex-direction: column;
-    padding: 1rem 0;
-  }
-}
-@media screen and (max-width: 400px){
+
+@media screen and (max-width: 400px) {
   .navbar_menu,
-  .navbar_links{
+  .navbar_links {
     display: none;
   }
 
   .navbar_menu.active,
-  .navbar_links.navbar_menu.active{
+  .navbar_links.active {
     display: flex;
   }
 }

@@ -1,7 +1,6 @@
-$(document).ready(function (){
+$(document).ready(function () {
     $(".logo_btn").click(function () {
         $(".navbar_menu").toggleClass("active");
-        $(.navbar_links).toggleClass("active");
-
+        $(".navbar_links").toggleClass("active");
     });
 });
