@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지유진</title>
+</head>
+<style>
+    form {
+      border: 1px solid black;
+      padding: 2rem;
+      max-width: 500px;
+      width: fit-content;
+      height: fit-content;
+    }
+    label{
+        font-weight: bold;
+    }
+    .radio1{
+        font-weight: lighter;
+    }
+    .fruit{
+        font-weight: lighter;
+    }
+</style>
+<body>
+    <h1>로그인 화면 만들어보기</h1>
+    <form action="">
+        <label>ID</label><br>
+        <input type="text"><br>
+        <label>PASSWORD</label><br>
+        <input type="text">
+        <br>
+        <label>성별</label><br>
+        <label class="radio1">남자</label>
+        <input type="radio" value="male">
+        <label class="radio1">여자</label>
+        <input type="radio" value="female">
+        <br>
+        <br>
+        <label>좋아하는 과일 선택</label><br>
+        <label class="fruit">사과🍎</label>
+        <input type="checkbox" name="fruit" id="Apple"><br>
+        <label class="fruit">파인애플🍍</label>
+        <input type="checkbox" name="fruit" id="PineApple"><br>
+        <label class="fruit">포도🍇</label>
+        <input type="checkbox" name="fruit" id="Grape"><br>
+        <label class="fruit">키위🥝</label>
+        <input type="checkbox" name="fruit" id="Kiwi"><br>
+        <label class="fruit">바나나🍌</label>
+        <input type="checkbox" name="fruit" id="Banana"><br>
+        <br>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+    <ol>
+        <li><a href="https://www.instagram.com/" target="_blank">인스타그램</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank">페이스북</a></li>
+        <li><a href="https://github.com/" target="_blank">깃허브</a></li>
+    </ol>
+</body>
+</html>
