@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, #fc466b 100%);
+}
+
+.box{
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+.header{
+    color: black;
+    height: 50px;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 7px;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.items {
+    padding: 10px;
+    width: 100%;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.15);
+    list-style: none;
+    overflow-y: scroll;
+}
+
+.items>* {
+    font-size: 1.5rem;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px, 32px;
+}
+
+.itemDiv{
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    margin: auto;
+}
+
+.itemRow{
+    padding: 10px;
+    width: 100%;
+}
+
+.item_row{
+    padding: 10px;
+    width: 100%;
+}
+
+.footer{
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemInput{
+    width: 100%;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    height: 50px;
+    padding: 10px;
+}
+
+.itemDelete{
+    background-color:rgba(255, 255, 255, 0);
+}
+
+.AddBtn{
+    margin: 10px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fc466b;
+    font-size: 2rem;
+}
+
+.item>button:hover{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+    color: #fc466b;
+}
+
+.AddBtn:hover{
+    cursor: pointer;
+}
