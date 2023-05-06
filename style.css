@@ -1,71 +1,132 @@
-html {
-    font-size:30px;
-}
 
-img {
-    max-width:100%;
-    object-fit: cover;
-}
 
-div.picture {
-    display: float;
-    width:300px;
-    height:300px;
-}
-
-p.title-sub, h1.title-main {
-    text-align: center;
-}
-div.container {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-div.title{
-    width: 750px;
-}
-
-p {
-    font-style: bold;
-}
-
-div.one {
-    width: auto;
-    float: left;
+*{
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Dongle', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Black Han Sans', sans-serif;
 }
 
-div.two {
-    width: auto;
-    float:right;
+a:link, a:visited {
+    text-decoration: none;
+    color: #000000;
 }
 
-div.whole {
-    display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(40%,auto));
-    column-gap: 10px
+.container {
+    width: 1200px; 
+    margin: 0 auto;
 }
 
-span.name, span.year, span.info, span.his{
-    font-weight: bold;
+/* nav bar */
+
+nav {
+    height: 80px;
+    background-color: #00ffff;
+    line-height: 80px;
 }
 
-.picto{
+.logo {
+    font-size: 50px;
+    float: left;
+    margin: 0;
+}
+
+.nav-menu {
+    float: right;
+}
+
+.nav-btn {
+    list-style-type: none;
+    margin: 0;   
+}
+
+ul.nav-btn > li {
+    float: left;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* header */
+
+.hd {
+    position: relative;
+    height: 700px;
+    text-align: center;
+}
+
+.hd-title {
+    font-size: 85px;
+    margin-top: 0;
+    padding-top: 150px;
+    margin-bottom: 20px;
+}
+
+.hd-content {
+    font-size: 30px;
+}
+
+.hd::before {
+    content:"";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
-    display: flex;
-    height: 150px;
-    justify-content: center;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url(./lion.jfif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-
-footer{
-    text-align: center;
-    font-size: 0.5rem;
+.hd .container {
+    position: relative;
+    color: #000000;
 }
 
-div.fifth{
+/* section */
+
+.sec {
     text-align: center;
+    padding: 100px 0;
+    background-color: #f0f8ff;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.sec article {
+    float: left;
+    width: 300px;
+    margin-right: 100px;
+    font-size: 30px;
+}
+
+.sec article :last-child {
+    margin-right: 0;
+}
+
+.sec article img {
+    width: 100%;
+    height: auto;
+}
+
+.ar-img {
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+}
+
+.sec::after{
+    content: "";
+    display: block;
+    clear: both;
 }
