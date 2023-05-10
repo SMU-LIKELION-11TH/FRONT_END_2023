@@ -1,0 +1,187 @@
+body {
+  background-color: #1b1b1b;
+}
+
+header h1 span {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+}
+
+header h1 em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+header h1 {
+  position: relative;
+  padding: 10px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 20pt;
+  color: #080808;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  background-color: #ececec;
+  border-radius: 0 0 20px 20px;
+}
+
+header h1:before {
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: #b80000;
+}
+
+header h1:after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 25px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #b80000;
+}
+
+.card-maker {
+  width: 100%;
+  min-height: calc(100vh - 20px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-wrapper {
+  width: 350px;
+  height: 380px;
+  padding-top: 5px;
+  background-color: #ececec;
+  border-radius: 20px;
+}
+
+.form-wrapper div {
+  width: 320px;
+  height: 40px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-wrapper form input {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border-color: transparent;
+  background-color: #d8d8d8;
+  font-size: 15pt;
+  padding-left: 15px;
+}
+
+.button-wrap button {
+  height: 40px;
+  width: 75px;
+  font-weight: 700;
+  font-size: 10pt;
+  border-radius: 10px;
+  background-color: #cccccc;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #979797;
+}
+
+#color-shower {
+  height: 40px;
+  width: 75px;
+  font-weight: 300;
+  font-size: 10pt;
+  color: #bcbcbc;
+  background-color: #fff;
+  border: #cccccc 1px solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#color-picker, #photo-picker {
+  display: none;
+}
+
+#generate-button {
+  background-color: #ff960d;
+}
+
+#generate-button:active {
+  background-color: #a76208;
+}
+
+/* card */
+
+.card-area {
+  width: 450px;
+  min-height: 300px;
+}
+
+.card {
+  margin: 20px auto;
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: white;
+  display: flex;
+}
+
+.left-side {
+  width: 150px;
+  height: 100%;
+  text-align: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: #080808 2px solid;
+  background-color: #fff;
+  object-fit: cover;
+}
+
+.left-side h1 {
+  font-size: 20pt;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.right-side {
+  width: 250px;
+  margin-left: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.right-side p {
+  font-size: 12pt;
+  font-weight: 700;
+  line-height: 30pt;
+  text-align: right;
+}
+
+.right-side i {
+  margin-right: 5px;
+}
