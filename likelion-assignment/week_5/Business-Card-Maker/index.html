@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./pretendard.css">
+  <title>Business Card Maker</title>
+</head>
+<body>
+  
+  <header>
+    <div>
+      <h1>Business Card Maker</h1>
+    </div>
+  </header>
+
+  <section class="card-maker">
+    <div class="form-wrapper">
+      <form>
+        <div>
+          <input type="text" placeholder="이름" id="name">
+        </div>
+        <div>
+          <input type="text" placeholder="직업" id="occupation">
+        </div>
+        <div>
+          <input type="text" placeholder="학력" id="education">
+        </div>
+        <div>
+          <input type="text" placeholder="깃허브 주소" id="github-url">
+        </div>
+        <div>
+          <input type="text" placeholder="인스타그램 주소" id="instagram-url">
+        </div>
+      </form>
+      <div class="button-wrap">
+        <button id="color-button">배경색 선택
+          <input id="color-picker" type="color">
+        </button>
+        <span id="color-shower">선택된 색</span>
+        <button id="photo-button">사진 입력
+          <input id="photo-picker" type="file" accept="image/*">
+        </button>
+        <button id="generate-button">생성하기</button>
+      </div>
+    </div>
+  
+    <div class="card-area">
+
+      <!-- <div class="card">
+        <div class="left-side">
+          <img src='base_img.jpeg' class="profile-image"></img>
+          <h1>정지원</h1>
+        </div>
+        <div class="right-side">
+          <p>직업소개</p>
+          <p><i class="fa-solid fa-building"></i><span>상명대어쩌고</span></p>
+          <p><i class="fa-brands fa-github"></i><span>상명대어쩌고</span></p>
+          <p><i class="fa-brands fa-instagram"></i><span>상명대어쩌고</span></p>
+        </div>
+      </div> -->
+      
+    </div>
+  </section>
+
+
+  <script src="./index.js"></script>
+  <script src="https://kit.fontawesome.com/0082ffcde3.js" crossorigin="anonymous"></script>
+</body>
+</html>
