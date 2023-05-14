@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="index.js"></script>
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/66bc1808bb.js" crossorigin="anonymous"></script>
+        <script src=""></script>
+        <title>명함만들기</title>
+    </head>
+    <body>
+        <div class="container">
+
+            <!-- 헤더 -->
+            <section class="title">
+                <h1>BUSSINESS CARD MAKER</h1>
+            </section>
+
+            <!-- 입력창 -->
+            <section class="form-container">
+                <form class="info">
+                    <!-- 사용자 입력창 -->
+                    <div class="inputData">
+                        <input type="text" id="author" name="author"><br>
+                        <input type="text" id="role" name="role"><br>
+                        <input type="text" id="part" name="part"><br>
+                        <input type="text" id="git" name="git"><br>
+                        <input type="text" id="instagram" name="instagram">
+                    </div>
+                </form>
+
+                    <!-- 버튼 -->
+                    <div class="btn">
+                        <button type="button">배경 선택</button>
+                        <input type="color" name="idColor" id="idColor">
+                        <button onclick="setImage()">사진 입력</button>
+                        <!-- <input type="submit" onsubmit="submit()" value="만들기"> -->
+                        <button type="submit" onclick="submit()">만들기</button>
+                    </div>
+            </section>
+
+            <!-- 명함 리스트 -->
+            <section class="content-list"></section>
+        </div>    
+    </body>
+</html>
