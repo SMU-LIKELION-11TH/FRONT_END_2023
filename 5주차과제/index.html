@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>명함 만들기</title>
+    <link type="text/css" rel="stylesheet" href="./index.css" />
+
+</head>
+
+<body>
+    <div class="one">
+        <h1>BUSINESS CARD MAKER</h1>
+    </div>
+
+
+    <div class="form-container">
+
+        <form onsubmit="event.preventDefault();">
+            <div>
+                <input type="text" id="name" placeholder="name">
+            </div>
+            <br>
+            <div>
+                <input type="text" id="major" placeholder="major">
+            </div>
+            <br>
+            <div>
+                <input type="text" id="department" placeholder="department">
+            </div>
+            <br>
+            <div>
+                <input type="text" id="github-address" placeholder="github_address">
+            </div>
+            <br>
+            <div>
+                <input type="text" id="instagram-address" placeholder="instagram_address">
+            </div>
+            <br>
+            <button type="button">배경 선택</button>
+            <button type="submit" onclick="createCard()">ADD</button>
+            <button type="button" id="upload-btn" onclick="selectImage()">사진 입력</button>  
+            <button type="button">만들기</button>
+        </form>
+    
+    </div>
+   
+
+
+    <div class="card-container"></div> 
+ 
+    <script src="./card.js"></script>
+</body>
+
+</html>

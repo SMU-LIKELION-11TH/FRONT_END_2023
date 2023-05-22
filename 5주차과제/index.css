@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#eee;
+}
+
+
+h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+  
+  h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+  }
+  h1 em {
+    font-style: normal;
+    font-weight: 600;
+  }
+
+.one{
+    background-color:white;
+
+}
+  .one h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+  .one h1:before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #b80000;
+  }
+  .one h1:after {
+    width: 100px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #b80000;
+  }
+  
+
+
+
+.form-container{
+    position: fixed;
+    top:120px;
+    left:130px;
+    bottom:100px;
+    width:350px;
+    height:400px;
+    background-color:white;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+form {
+    display: block;
+  }
+  
+form > div{
+    
+    margin-bottom: 10px;
+}
+
+input{
+    width:300px;
+    height: 35px;
+    box-sizing: border-box;
+    background-color: #c8c8c8;
+    border-radius:10px;
+    border: 1px solid #c8c8c8;
+}
+
+button {
+ 
+    background-color:#41A541;
+    border: 1px solid #41A541;
+    color: white;
+    margin: 0 5px;
+
+}
+
+#add-btn{
+    width:53px;
+    height:23px;
+}
+
+.card {
+  float:right;
+  width: 400px;
+  height: 150px;
+  margin-bottom: 20px;
+  margin-right: 150px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+.card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* 명함 컨테이너 스타일 */
+.card-container {
+  float:right;
+  flex-wrap: wrap;
+  width: 800px;
+  margin-top: 70px;
+}
+
+
+
+
