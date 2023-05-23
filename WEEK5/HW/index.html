@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset = "UTF=8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content="width=device-width,initial-scale1.0">
+    <script type = "text/javascript" src = "index.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <title>namecard</title>
+</head>
+<body>
+    <nav>
+        <div class = "container">
+            <h1 class = "logo">BUSINESS CARD MAKER</h1>
+        </div>
+    </nav>
+    <section class = "enroll">
+        <div class = "card" id = "card">
+            <form>
+                <p><input type="text" placeholder = "NAME" id = "name" name = "name"/></p>
+                <p><input type="text" placeholder = "JOB" id = "job" name = "job"/></p>
+                <p><input type="text" placeholder = "MAJOR" id = "major" name = "major"/></p>
+                <p><input type="text" placeholder = "GITHUB" id = "github" name = "github"/></p>
+                <p><input type="text" placeholder = "INSTAGRAM" id = "instagram" name = "instagram"/></p>
+            </form>
+            <input id = "color" type = "color">
+            <button>배경선택</button>
+            <!-- <label for="image" class = "upload-image">사진선택</label> -->
+            <input type="file" id="image" name="image" accept="image/*" onchange = "loadFile(event)" required multiple/>
+
+            <button type = "submit" onclick="submit()">등록하기</button>
+        </div>
+        <section class = "content-list" id = "content-list"></section>
+    </section>
+</body>
+</html>
