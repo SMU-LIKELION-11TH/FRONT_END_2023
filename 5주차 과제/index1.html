@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>명함 만들기</title>
+    <script src="https://kit.fontawesome.com/ba49d39b5e.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index1.js"></script>   
+</head>
+
+<body>
+    <header class="hd">
+        <div class="Title">
+            <h1>BUSSINESS CARD MAKER</h1>
+        </div>
+    </header>
+
+    <div class="middle">
+
+
+        <div class="container">
+            <form onsubmit="namecard();">
+                <input class='input' type="text" id="name" name="name" placeholder="name" required/>
+                <input class='input' type="text" id="job" name="job" placeholder="major" required/>
+                <input class='input' type="text" id="major" name="major" placeholder="major" required/>
+                <input class='input' type="text" id="github" name="github" placeholder="github_address" required/>
+                <input class='input' type="text" id="insta" name="insta" placeholder="instagram_address" required/>
+            <section class="button-container">
+                <button>배경선택</button>
+                <input type="color" id="color" value='#7fffd4' required />
+                <label for="image" id="imagebutton">사진입력</label>
+                <input type="file" id="image" name="image" accept="image/*" required />
+                <button type="submit">만들기</button> 
+            </section>
+            </form>
+        </div>
+
+        <!--명함-->
+        <div class="namecard">
+            <div class="namecard_img">
+                <img src="./profile.jpeg" class="namecard_profile" />
+            </div>
+            <div class="namecard_intro">
+                <div class="namecard_school">
+                    <h3 id="profile_name">박서경</h3>
+                    <h3>프론트엔드 개발자</h3>
+                    <p><i class="fa-solid fa-school"></i> 상명대학교 컴퓨터과학전공</p>
+                </div>
+                <div class="namecard_sns">
+                    <p><i class="fa-brands fa-github"></i> https://github.com/SEOKYUNG22</p>
+                      <p><i class="fa-brands fa-instagram"></i> s_k.kyung</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+* {
+    margin: 0; /*여백 없애기*/
+  }
+  
+  h1 {
+      position: relative;
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      font-size: 30px;
+      color: #080808;
+      -webkit-transition: all 0.4s ease 0s;
+      -o-transition: all 0.4s ease 0s;
+      transition: all 0.4s ease 0s;
+    }
+  
+    .Title{
+      background-color: white;
+    }
+    body{
+      background-color:lightgray;
+    }
+  
+    h1 span {
+      display: block;
+      font-size: 5px;
+      line-height: 1.0;
+    }
+    h1 em {
+      font-style: normal;
+      font-weight: 300;
+    }
+  
+  .hd h1 {
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 5px;
+    }
+    .hd h1:before {
+      width: 28px;
+      height: 5px;
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 3px;
+      left: 50%;
+      margin-left: -14px;
+      background-color: #b80000;
+    }
+    .hd h1:after {
+      width: 100px;
+      height: 1px;
+      display: block;
+      content: "";
+      position: relative;
+      margin-top: 25px;
+      left: 50%;
+      margin-left: -50px;
+      background-color: #b80000;
+    }
+    .container{
+      box-sizing: border-box;
+      float: left;
+      margin: 180px;                                                                     
+      width:350px;
+      height: 440px;
+      background-color: white;
+      padding-bottom: 10px;
+    }
+  
+    .input {
+      width: 250px;
+      height: 40px;
+      font-size: 15px;
+      border: 0;
+      border-radius: 10px;
+      outline: none;
+      padding-left: 30px;
+      margin-top: 25px;
+      margin-left: 35px;
+      background-color: rgb(233, 233, 233);
+    }
+    .color{
+      box-sizing: border-box;
+      background-color: pink;
+      width: 20px;
+      height: 10px;
+    }
+  
+    .button-container{
+      margin-top: 30px;
+      margin-left: 35px;
+    }
+    .button-container button{
+      border-radius: 1px;
+      background-color: green;
+      border: none;
+      color:white;
+      width: 60px;
+      height: 30px;
+      padding: 1px 2px;
+      border-radius: 4px;
+      text-align: center;
+      margin-bottom: 35px;
+  
+    }
+    #image {
+      display: none;
+      height: 1px;
+      width: 1px;
+    }
+  
+    #imagebutton{
+      background-color: green;
+      border-radius: 1px;
+      border: none;
+      color: white;
+      padding: 6px 8.5px;
+      border-radius: 4px;
+      text-align:center;
+      margin-bottom: 35px;
+      font-size: 13px;
+    }
+  
+    .namecard_profile {
+      width: 100px;
+      height: 100px;
+      border-radius: 70%;
+      margin: 12px;
+      object-fit: cover;
+      border: #080808 2px solid;
+      float: left;
+    }
+  
+    .namecard{
+      box-sizing: border-box;
+      box-shadow: 3px 3px 3px 3px gray;
+      float: left;
+      margin-top: 35px;
+      flex: 1;
+      width: 380px;
+      height: 200px;
+      background-color: white;
+      padding-bottom: 10px;
+      flex-wrap: wrap;
+    }
+  
+    .namecard_intro{
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      margin-left: 140px;
+      padding-bottom: 200px;
+    }
+  
+  
+    .namecard_school{
+      margin-top: 20px;
+      font-size: 15px;
+    }
+  
+    .namecard_sns{
+      font-size: 13px;
+      margin-top: 45px;
+    }
