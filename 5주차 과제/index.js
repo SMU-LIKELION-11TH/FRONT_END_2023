@@ -1,8 +1,14 @@
 let data = [];
-var file;
+// var file;
+let file;
+var files = [];
+let id = 0;
 
 function loadFile(input) {
+    // file = input.files[0];
     file = input.files[0];
+    files.push(URL.createObjectURL(file));
+    // files.push(input);
 }
 
 const submit = () => {
@@ -13,7 +19,7 @@ const submit = () => {
     const insta = document.getElementById("insta").value;
     const color = document.getElementById("color").value;
 
-    if (!file || !name || !job || !rectal || !git || !insta) {
+    if (!files[id] || !name || !job || !rectal || !git || !insta) {
         alert("내용을 전부 입력하세요.");
     } else {
         const newItem = {
@@ -27,6 +33,7 @@ const submit = () => {
 
         data.push(newItem);
         console.log(data);
+        // console.log(files[id]);
         showData();
     };
 };
@@ -35,6 +42,7 @@ const showData = () => {
     const contentList = document.querySelector(".content-list");
     contentList.replaceChildren();
 
+    let i = 0;
     data.forEach((item) => {
         let div = document.createElement("div");
         div.setAttribute("class", "content");
@@ -56,11 +64,19 @@ const showData = () => {
         down.setAttribute("class", "right-down");
         right.appendChild(down);
 
-        // 이미지
-        var newImage = document.createElement("img");
+        console.log(i);
+        console.log(files[i]);
+        let newImage = document.createElement("img");
         newImage.setAttribute("class", "img");
-        newImage.src = URL.createObjectURL(file);
+        newImage.src = files[i];
         left.appendChild(newImage);
+        i++;
+
+        // 이미지
+        // var newImage = document.createElement("img");
+        // newImage.setAttribute("class", "img");
+        // newImage.src = URL.createObjectURL(file);
+        // left.appendChild(newImage);
 
         for (let key in item) {
             const p = document.createElement("p");
@@ -96,5 +112,8 @@ const showData = () => {
                 div.style.background = `${item[key]}`;
             };
         };
+
     });
+
+    id++;
 };
