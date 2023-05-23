@@ -1,0 +1,47 @@
+{% load template %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>멋사와 함께 하는 블로그 세미나</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="main_body_wrap">
+        <div class="main_height_body_wrap">
+            <div class="main_menu">
+                <h2 onClick="location.href=''">BLOG CRUD 연습하기</h2>
+                <div class="main_right_menu">
+                    <p onclick="location.href='{% url 'signup' %}'">로그인</p>
+                    <p onclick="location.href='{% url 'signup' %}'">회원가입</p>
+                </div>
+            </div>
+            <div class="main_body">
+                <div class="main_top_body">
+                    <img src="./../static/img/hoon.png"/>
+                    <h1>
+                        <div class="likelion_p">멋사</div>
+                        와 함께 하는<br/>
+                        게시판 CRUD 만들기
+                    </h1>
+                </div>
+            </div>
+        </div>
+<!--        <div class="main_height_body_wrap">-->
+<!--            <div class="main_introduce_wrap">-->
+<!--                <div class="main_introduce_info">-->
+<!--                    <div class="main_introduce_imgs">-->
+<!--                        <img src="./../static/img/likelion.png" />-->
+<!--                    </div>-->
+<!--                    <h1>LIKELION</h1>-->
+<!--                    <p>상명대학교 중앙동아리</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="footer">
+            <img src="./../static/img/LIKELION%20UNIV_brandlogo_white_forweb_221111.png"/>
+        </div>
+    </div>
+</body>
+</html>

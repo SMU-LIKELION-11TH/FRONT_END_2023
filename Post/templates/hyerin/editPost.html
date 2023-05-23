@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>게시글 수정하기</title>
+  <link rel="stylesheet" href="{% static 'css/post.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="post_body_wrap">
+  <div class="main_menu">
+    <h2 onClick="location.href='/'">BLOG CRUD 연습하기</h2>
+    <div class="main_right_menu">
+      {% if user.is_authenticated %}
+            <p>환영합니다 {{user.get_full_name}}님</p>
+          {% else %}
+            <p onclick="location.href='{% url 'account:login' %}'">로그인</p>
+            <p onclick="location.href='{% url 'account:signup' %}'">회원가입</p>
+
+          {% endif %}
+    </div>
+  </div>
+  <form action = "/post/update/{{post.id}}/" method = "post">
+    {% csrf_token %}
+  <div class="post_body">
+    <div class="post_detail_wrap">
+      <div class="post_detail_title">
+        <input type="text" id="postTitle" name = "title"/>
+      </div>
+      <div class="post_detail_content2">
+        <textarea id="postContent" name = "content"></textarea>
+      </div>
+    </div>
+  </div>
+    <input id = "form_submit" type = "submit" style = "display:none">
+    </form>
+  <div class="post_bt_wrap">
+    <button type="button" onclick="completePost_cbv();">
+      저장하기
+    </button>
+  </div>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="{% static 'js/editPost.js' %}"></script>
+</html>ㄴ
