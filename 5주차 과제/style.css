@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*** 제목 ***/
+
+h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", Sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.one h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.one h1:before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #b80000;
+}
+
+.one h1:after {
+    width: 100px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #b80000;
+}
+
+
+/*** 컨테이너 ***/
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 960px;
+    background-color: #d3d3d3;
+}
+
+
+/*** sec1 ***/
+
+.sec1 {
+    /* float: left; */
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #d3d3d3;
+}
+
+.infor {
+    margin: 0 auto;
+    width: 280px;
+    height: 330px;
+    background-color: white;
+}
+
+form {
+    margin-top: 150px;
+    text-align: center;
+    border-radius: 200;
+}
+
+.top input {
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 215px;
+    height: 35px;
+    background-color: #d3d3d3;
+}
+
+.down {
+    height: 80px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.down * {
+    cursor: pointer;
+    border: none;
+    background-color: #FAF082;
+    height: 35px;
+    width: 60px;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 0px;
+}
+
+.color {
+    padding: 8.5px;
+    border: none;
+}
+
+input[type=file]::file-selector-button {
+    cursor: pointer;
+    border: none;
+    background-color: #FAF082;
+    height: 35px;
+    width: 60px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 0px;
+}
+
+
+/* .sec1:after {
+    content: "";
+    clear: both;
+    display: block;
+} */
+
+
+/*** sec2 ***/
+
+.sec2 {
+    /* float: right; */
+    width: 50%;
+    height: 100%;
+    background-color: #d3d3d3;
+    overflow-x: hidden;
+}
+
+.content-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.content {
+    margin-bottom: 30px;
+    width: 390px;
+    height: 230px;
+    /* padding: 20px; */
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.content-left {
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.content-right {
+    width: 60%;
+}
+
+.right-top {
+    margin-top: 40px;
+    height: 100px;
+}
+
+i {
+    margin-right: 2px;
+}
+
+.content p {
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.content .name-p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content .job-p {
+    font-size: 18px;
+}

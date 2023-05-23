@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>명함 만들기</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/fe66068d41.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="one">
+            <h1>Bussiness Card Maker</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="sec1">
+            <div class="infor">
+                <form action="">
+                    <div class="top">
+                        <input type="text" id="name" name="name" placeholder="이름" />
+                        <input type="text" id="job" name="job" placeholder="직업" />
+                        <input type="text" id="rectal" name="rectal" placeholder="소속" />
+                        <input type="text" id="git" name="git" placeholder="깃허브" />
+                        <input type="text" id="insta" name="insta" placeholder="인스타" />
+                    </div>
+                </form>
+                <div class="down">
+                    <button>배경 선택</button>
+                    <input type="color" id="color" class="color" value="#FFFFFF">
+                    <input type="file" id="fileUpload" onchange="loadFile(this)" />
+                    <button type="submit" onclick="submit()">만들기</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec2">
+            <div class="content-list"></div>
+        </section>
+    </div>
+
+</body>
+
+</html>
