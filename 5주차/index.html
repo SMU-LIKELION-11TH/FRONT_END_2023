@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-Dw2jR7y25XL0mDzFVr4qL3KR0RrjJGqb2L+2uUv3/m+W1G1YQ/CYwO+g91q7W2XK" crossorigin="anonymous">
+    
+
+    <title>명함만들기</title>
+    
+  </head>
+
+
+  <body>
+    <section class="title">
+      <h1>BUSSINESS CARD MAKER</h1>
+    </section>
+    <div class="container">
+      <section class="form-container">
+        <form class="text">
+          <p><input type="text" id="name" name="name" /></p>
+          <p><input type="text" id="front" name="front" /></p>
+          <p><input type="text" id="school" name="school" /></p>
+          <p><input type="text" id="github" name="github" /></p>
+          <p><input type="text" id="instagram" name="instagram" /></p>
+        </form>
+        
+        
+        <button type="submit" id="btn" >배경 선택</button>
+        <div id = new_btn class="hidden">
+          <input type="color" id="input_color" value="#e66465">
+        </div>
+
+        <button type="submit" onclick="submit()">ADD</button>
+        <button type="submit">만들기</button>
+        
+        <input type='file' accept='image/*' onchange='openFile(event)'><br>
+          <img id='output'>
+
+        
+      </section>
+
+      <section class="content-list"></section>
+      <script type="text/javascript" src="index.js"></script>
+    </div>
+  </body>
+</html>
