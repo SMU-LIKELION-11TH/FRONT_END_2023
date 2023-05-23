@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Card Maker</title>
+    <script
+      src="https://kit.fontawesome.com/168f1e1640.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>BUSINESS CARD MAKER</h1>
+    </div>
+    <div class="main">
+      <div class="allCard">
+        <form action="" onsubmit="addCard(event)">
+          <input
+            type="text"
+            name="input_name"
+            class="input name"
+            placeholder="name"
+          />
+          <input
+            type="text"
+            name="input_major"
+            class="input major"
+            placeholder="major"
+          />
+          <input
+            type="text"
+            name="input_school"
+            class="input school"
+            placeholder="school"
+          />
+          <input
+            type="text"
+            name="input_github"
+            class="input github"
+            placeholder="github"
+          />
+          <input
+            type="text"
+            name="input_instagram"
+            class="input instagram"
+            placeholder="instagram"
+          />
+
+          <div class="footer">
+            <label class="footer_item" for="input_color">배경선택</label>
+            <input
+              class="footer_item"
+              id="input_color"
+              type="color"
+              value="#ffc0cb"
+            />
+            <label class="footer_item" for="input_image">사진 입력</label>
+            <input
+              class="footer_item"
+              id="input_image"
+              type="file"
+              accept="image/*"
+              hidden
+            />
+            <button class="footer_item" type="submit">만들기</button>
+          </div>
+        </form>
+      </div>
+
+      <section class="newCard_section"></section>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
