@@ -29,9 +29,8 @@
             </form>
             <div class="button">
                 <section class="button-container">
-                    <input type="color" id="background" name="background" value="#ffffff">
-                    <input type="file" onchange="readURL(this);"></input>
-                    <img id="preview"/>
+                    <input type="color" id="background" name="background" value="#ffffff" onclick="colorInput();"></input>
+                    <input type="file" id ="image" name="image" accept="image/*" onchange="loadFile(event);" required multiple/></input>
                     <button type="submit" onclick="submit()">만들기</button>
                 </section>
             </div>
