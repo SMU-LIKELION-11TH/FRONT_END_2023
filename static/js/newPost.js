@@ -15,3 +15,7 @@ function completeNewPost(){
         }
     })
 }
+
+function completeNewPost_cbv(){
+    $("#form_submit").trigger("click")
+}

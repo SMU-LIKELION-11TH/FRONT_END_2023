@@ -11,24 +11,32 @@
         <div class="main_menu">
             <h2 onClick="location.href='./index.html'">BLOG CRUD 연습하기</h2>
             <div class="main_right_menu">
-                <p onclick="location.href='./login.html'">로그인</p>
-                <p onclick="location.href='./signup.html'">회원가입</p>
+                {% if user.is_authenticated %}
+            <p>환영합니다 {{user.get_full_name}}님</p>
+          {% else %}
+            <p onclick="location.href='{% url 'account:login' %}'">로그인</p>
+            <p onclick="location.href='{% url 'account:signup' %}'">회원가입</p>
+
+          {% endif %}
             </div>
         </div>
         <div class="post_body">
-            <div class="post_detail_wrap">
-                <div class="post_detail_title">
-                    <input type="text" id="postTitle" placeholder="제목을 입력해주세요."/>
+            <form action = "{% url 'post:create' %}" method = "post">
+                <div class="post_detail_wrap">
+                    <div class="post_detail_title">
+                        <input type="text" id="postTitle" name = "title" placeholder="제목을 입력해주세요."/>
+                    </div>
+                    <div class="post_detail_content">
+                        <textarea id="postContent" name = "content" placeholder="내용을 입력해주세요."></textarea>
+                    </div>
                 </div>
-                <div class="post_detail_content">
-                    <textarea id="postContent" placeholder="내용을 입력해주세요."></textarea>
+                <div class="post_bt_wrap">
+                    <button type="button" onclick="completeNewPost_cbv();">
+                        저장하기
+                    </button>
+                    <input id = "form_submit" type = "submit" style = "display:none">
                 </div>
-            </div>
-            <div class="post_bt_wrap">
-                <button type="button" onclick="completeNewPost();">
-                    저장하기
-                </button>
-            </div>
+            </form>
         </div>
     </div>
     </body>
