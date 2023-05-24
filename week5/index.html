@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript" src="index.js"></script>
     <link type="text/css" rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,27 +15,23 @@
 </head>
 
 <body>
-    <section class="sec">
-    <div class="container">
-        <section class="form-container">
-            <form>
-                <p><input type="text" id="author" name="author" placeholder="이름" /></p>
-                <p><input type="text" id="part" name="part" placeholder="파트" /></p>
-                <p><input type="text" id="major" name="major" placeholder="전공" /></p>
-                <p><input type="text" id="github" name="github" placeholder="깃허브" /></p>
-                <p><input type="text" id="insta" name="insta" placeholder="인스타" /></p>
-            </form>
-            <div class="button">
-                <section class="button-container">
-                    <input type="color" id="background" name="background" value="#ffffff" onclick="colorInput();"></input>
-                    <input type="file" id ="image" name="image" accept="image/*" onchange="loadFile(event);" required multiple/></input>
-                    <button type="submit" onclick="submit()">만들기</button>
-                </section>
+    <main>
+        <form action="" onsubmit="addCard(event)">
+            <input type="text" class="input name" placeholder=" name">
+            <input type="text" class="input major" placeholder=" major">
+            <input type="text" class="input school" placeholder="school">
+            <input type="text" class="input github" placeholder=" github">
+            <input type="text" class="input instagram" placeholder=" instagram">
+            <div class="main_footer">
+                <label class="main_footer_item" for="input_color">배경선택</label>
+                <input class="main_footer_item" id="input_color" type="color" value="#FFFFFF">
+                <label class="main_footer_item" for="input_image">사진 선택</label>
+                <input class="main_footer_item" id="input_image" type="file" accept="image/*" hidden></input>
+                <button class="main_footer_item" type="submit">만들기</button>
             </div>
-        </section>
-        <section class="content-list"></section>
-    </div>
-</section>
+        </form>
+    </main>
+    <section class="content-list"></section>
 </body>
-
+<script type="text/javascript" src="index.js"></script>
 </html>

@@ -1,74 +1,101 @@
-let data = [];
-const obj = {
-  imageSrc:"",
-}
+const contentList = document.querySelector(".content-list");
+let newCards = [];
+let imgSrc="";
+
 //등록하기
-const submit = () => {
-  const author =document.getElementById("author").value;
-  const major=document.getElementById("major").value;
-  const github=document.getElementById("github").value;
-  const insta=document.getElementById("insta").value;
-  const part=document.getElementById("part").value;
+function addCard(event) {
+  event.preventDefault();
 
-  const newItem={
-    author:author,
-    part:part,
-    major:major,
-    github:github,
-    insta:insta
+  const name = document.querySelector(".name");
+  const major = document.querySelector(".major");
+  const school = document.querySelector(".school");
+  const github = document.querySelector(".github");
+  const instagram = document.querySelector(".instagram");
+  const bg = document.getElementById("input_color");
+
+  const card = {
+    card_name: name.value,
+    card_major: major.value,
+    card_school: school.value,
+    card_github: github.value,
+    card_instagram: instagram.value,
+    card_bg: bg.value,
+    card_img: imgSrc == "" ? "" : imgSrc,
   };
-  data.push(newItem);
-  console.log(data);
 
-  showData();
-  document.getElementById(author).value="",
-  document.getElementById(part).value="",
-  document.getElementById(major).value="",
-  document.getElementById(github).value="";
-  document.getElementById(insta).value="";
-};
-//data 배열에 담긴 객체 모두 보여주기
-const showData = () => {
-  const contentList =document.querySelector(".content-list");
-  contentList.replaceChildren();
+  newCards.push(card);
 
-  data.forEach((item)=>{
-    let div =document.createElement("div");
-    div.setAttribute("class","content");
-    contentList.appendChild(div);
-    const img = document.createElement("img");
-    img.src = obj.imageSrc;
-    img.style.width = "200px"
-    img.style.height = "200px"
-    div.appendChild(img);
-    
 
-    for(let key in item){
-      const p =document.createElement("p");
-      const text =document.createTextNode(`${item[key]}`);
-      p.appendChild(text);
-      div.appendChild(p);
-    }
-  });
   
-};
-//이미지 생성
-function loadFile(event){
-  console.log("파일로드");
-  var reader=new FileReader();
-  reader.onload=function(event){
-    const imageSrc=event.target.result;
-    obj.imageSrc=imageSrc;
-  }
-}
-//배경색 바꾸기
-function colorInput(){
-  const contentList = document.querySelector(".content-list");
-  const colorInput = document.getElementById("background");
-  const selectedColor=colorInput.value;
-  contentList.style.backgroundColor=selectedColor;
+  //초기화 해주는 것
+  name.value = "";
+  major.value = "";
+  school.value = "";
+  github.value = "";
+  instagram.value = "";
+  bg.value = "#FFFFFF";
 
-}
+// section 화면을 초기화
+contentList.replaceChildren();
+
+// 동적으로 card 생성
+newCards.forEach((card) => {
+  const newCard = document.createElement("div");
+  newCard.setAttribute("class", "newCard");
+  newCard.style.backgroundColor = `${card.card_bg}`;
+
+  const newCard_name = document.createElement("div");
+  newCard_name.setAttribute("class", "newCard_name");
+  newCard_name.innerText = card.card_name;
+  newCard.append(newCard_name);
+
+  const newCard_major = document.createElement("div");
+  newCard_major.setAttribute("class", "newCard_major");
+  newCard_major.innerText = card.card_major;
+  newCard.append(newCard_major);
+
+  const newCard_part = document.createElement("div");
+  newCard_part.setAttribute("class", "newCard_part");
+  newCard_part.innerText = card.card_school;
+  newCard.append(newCard_part);
+
+  const newCard_github = document.createElement("div");
+  newCard_github.setAttribute("class", "newCard_github");
+  newCard_github.innerText = card.card_github;
+  newCard.append(newCard_github);
+
+  const newCard_insta = document.createElement("div");
+  newCard_insta.setAttribute("class", "newCard_insta");
+  newCard_insta.innerText = card.card_instagram;
+  newCard.append(newCard_insta);
+
+  if (card.card_img != "") {
+    const newCard_image = document.createElement("img");
+    newCard_image.setAttribute("class", "newCard_image");
+    newCard_image.src = card.card_img;
+    newCard.append(newCard_image);
+
+    //img src도 초기화 시켜줌
+    imgSrc = "";
+    document.getElementById("input_image").value = "";
+  }
+
+  contentList.append(newCard);
+});
+};
+document
+  .getElementById("input_image")
+  .addEventListener("change", function (event) {
+    const file = event.target.files[0];
+
+    const reader = new FileReader();
+
+    reader.onload = function (event) {
+      imgSrc = event.target.result;
+    };
+
+    reader.readAsDataURL(file);
+  });
 
 
 
