@@ -57,6 +57,7 @@ ul.nav-btn > li {
 
 /* header */
 .hd {
+    background-color: white;
     position: relative;
     height: 600px;
     text-align: center;
