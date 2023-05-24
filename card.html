@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>명함 만들기</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script src="https://kit.fontawesome.com/b953a49500.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js" defer></script> 
+</head>
+
+<body>
+    <header class="head">
+        <div class="one">
+            <h1>BUSSINESS CARD MAKER</h1>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="input">
+            <form onsubmit="namecard(event);">
+                <input class='write' type="text" id="name" name="name" value="" required/>
+                <input class='write' type="text" id="job" name="job" required/>
+                <input class='write' type="text" id="major" name="major" required/>
+                <input class='write' type="text" id="github" name="github" required/>
+                <input class='write' type="text" id="insta" name="insta" required/>
+            <section class="btn">
+                <button>배경선택</button>
+                <input type="color" id="color" required />
+                <input id="photo-picker" type="file" accept="image/*" onchange=openFile(event)>
+                <label for="photo-picker">사진 입력</button>
+                <button type="submit">만들기</button> 
+            </section>
+            </form>
+        </div>
+        
+        <div class="namecard">
+            <div class="photo">
+                <img src="./img/ink.jpg" class="picture" />
+            </div>
+            <div class="information">
+                <div class="mi">
+                    <h3 class="name">김인겸</h3>
+                    <h3 class="job">프론트엔드 개발자</h3>
+                </div>
+                <div class="pi">
+                    <p><i class="fa-solid fa-school"></i>상명대학교 컴퓨터과학전공</p>
+                    <p><i class="fa-brands fa-github"></i>rladlsrua794</p>
+                    <p><i class="fa-brands fa-instagram"></i>inkyum794</p>
+                </div>
+            </div>
+        </div>
+    </div>  
+</body>
+
+</html>
