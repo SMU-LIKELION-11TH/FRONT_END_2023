@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./business_card.js" defer></script>
+    <script src="https://kit.fontawesome.com/0d1c3d8b69.js" crossorigin="anonymous"></script>
+    <title>명함만들기</title>
+</head>
+
+<body>
+    <header class="one">
+        <H1>Bussiness Card Maker</H1>
+    </header>
+    </div>
+    <div class="container">
+        <form onsubmit="handleSubmit(event)">
+        <div class="userinput">
+            <label class="input">
+                <!-- <strong>ID</strong><br> -->
+                <input type="text" id="name" placeholder="홍길동"><br>
+            </label>
+
+            <label class="input">
+                <!-- <strong>PASSWORD</strong><br> -->
+                <input type="text" id="job" placeholder="코더"><br>
+            </label>
+
+            <label class="input">
+                <input type="text" id="workin" placeholder="멋사 프론트엔드"><br>
+            </label>
+
+            <label class="input">
+                <input type="text" id="githublink" placeholder="github.com"><br>
+            </label>
+
+            <label class="input">
+                <input type="text" id="instagramlink" placeholder="instagram.com"><br>
+            </label>
+        </div>
+                    
+        <div class="userchoice">
+            <input type="color" id="AddBackground"/>
+            <label for="AddBackground">배경선택</label>
+            <input type="file" id="AddPicture" name="photo" accept="image/*"/>
+            <label for="AddPicture">사진입력</label>
+            <input type="submit" id="Add">만들기</input>
+        </div>
+        </form>
+        <!-- 새롭게 생성되는 카드 -->        
+        <div class="createcard">
+<!-- NewBusinesscard -->
+            <!-- <div class="left">
+                <img class="image_box" src="#" alt="empty">
+                <h2 class="name">name</h2>
+            </div>
+            <div class="right">
+                <p class="job">프론드엔드 개발자</p>
+                <p class="workin"><i class="fa-solid fa-briefcase"></i>상명대학교 컴퓨터과학전공</p>
+
+                <p class="githublink"><i class="fa-brands fa-github"></i>깃허브링크</p>
+                <p class="instagram"><i class="fa-brands fa-instagram"></i>인스타그램링크</p>
+            </div> -->
+
+        </div>
+    </div>
+
+
+    
+    </body>
+
+</html>
