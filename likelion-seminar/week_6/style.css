@@ -1,0 +1,44 @@
+* {
+  font-family: 'bitbit', serif;
+}
+
+body {
+  background-image: url(./image/background.jpeg);
+}
+
+#main {
+  width: 80%;
+  background-color: white;
+  text-align: center;
+  box-shadow: 3px 3px 5px #353535;
+}
+
+#qna {
+  display: none;
+}
+
+.qBox {
+  width: 80%;
+  background-color: white;
+  text-align: center;
+  box-shadow: 5px 5px rgb(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+#result {
+  display: none;
+}
+
+#A:hover, #B:hover {
+  background-color: black;
+  color: white;
+}
+
+.button-warp {
+  display: grid;
+}
+
+@font-face{
+  font-family:'bitbit';
+  src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
+}
