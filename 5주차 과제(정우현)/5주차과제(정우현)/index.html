@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>명함 만들기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="one">
+        <h1>Style One</h1>
+    </div>
+    <section class="in-container">
+        <section class="form-container">
+            <form>
+                <p>이름<input type="text" id="name" name="name" /></p>
+                <p>파트<input type="text" id="part" name="part" /></p>
+                <p>전공<input type="text" id="major" name="major" /></p>
+                <p>github<input type="text" id="github" name="github" /></p>
+                <p>instagram<input type="text" id="instagram" name="instagram" /></p>
+            </form>
+        </section>
+        <section class="button-container">
+            <button type="button">배경 선택</button>
+            <button type="button"><input type="color" id="color-picker"></button>
+            <button type="button" onclick="document.getElementById('file-input').click()">사진 입력</button>
+            <input type="file" id="file-input" style="display:none;">
+            <button type="button" onclick="generateCard()">만들기</button>
+        </section>
+    </section>
+
+    <section class="card">
+        <div class="card-container">
+            <!-- 이 부분은 JavaScript를 사용해 동적으로 추가됩니다. -->
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
