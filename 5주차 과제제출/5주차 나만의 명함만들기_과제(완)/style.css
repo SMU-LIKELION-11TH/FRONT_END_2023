@@ -102,6 +102,10 @@ input{
   margin: 2px;
 }
 
+.createcard{
+  width: 600px;
+  height: 600px;
+}
 
 .NewBusinesscard {
   display: flex;

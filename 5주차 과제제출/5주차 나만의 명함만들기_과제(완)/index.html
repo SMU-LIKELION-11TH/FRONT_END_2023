@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./business card.js" defer></script>
+    <script src="./business_card.js" defer></script>
     <script src="https://kit.fontawesome.com/0d1c3d8b69.js" crossorigin="anonymous"></script>
     <title>명함만들기</title>
 </head>
@@ -17,8 +17,8 @@
     </header>
     </div>
     <div class="container">
-        <form onsubmit="submit()">
-        <p class="userinput">
+        <form onsubmit="handleSubmit(event)">
+        <div class="userinput">
             <label class="input">
                 <!-- <strong>ID</strong><br> -->
                 <input type="text" id="name" placeholder="홍길동"><br>
@@ -40,19 +40,20 @@
             <label class="input">
                 <input type="text" id="instagramlink" placeholder="instagram.com"><br>
             </label>
-        </p>
+        </div>
                     
-        <p class="userchoice">
+        <div class="userchoice">
             <input type="color" id="AddBackground"/>
             <label for="AddBackground">배경선택</label>
             <input type="file" id="AddPicture" name="photo" accept="image/*"/>
             <label for="AddPicture">사진입력</label>
-            <button type="button" id="Add">만들기</button>
-        </p>
+            <input type="submit" id="Add">만들기</input>
+        </div>
         </form>
         <!-- 새롭게 생성되는 카드 -->        
-        <!-- <div class="NewBusinesscard">
-            <div class="left">
+        <div class="createcard">
+<!-- NewBusinesscard -->
+            <!-- <div class="left">
                 <img class="image_box" src="#" alt="empty">
                 <h2 class="name">name</h2>
             </div>
@@ -62,31 +63,13 @@
 
                 <p class="githublink"><i class="fa-brands fa-github"></i>깃허브링크</p>
                 <p class="instagram"><i class="fa-brands fa-instagram"></i>인스타그램링크</p>
-            </div>
-        </div> -->
+            </div> -->
+
+        </div>
     </div>
 
 
     
-
-    <!-- <ol>
-        <li> 
-            <a href="https://www.instagram.com/" target="_blank">
-            인스타그램
-            </a>
-        </li>
-        <li> 
-            <a href="https://www.facebook.com/" target="_blank">
-            페이스북
-            </a>
-        </li>
-        <li> 
-            <a href="https://github.com/" target="_blank">
-            깃허브
-            </a>
-        </li>
-    </ol> -->
-
     </body>
 
 </html>
