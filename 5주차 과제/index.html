@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script type="text/javascript" src="index.js"></script>
+   <link type="text/css" rel="stylesheet" href="style.css" />
+   <title>명함만들기 :)</title>
+</head>
+<body>
+   <div class ="container">
+      <section class ="title">
+         <h1>명함 만들기</h1>
+      </section>
+
+      <section class ="form-container">
+         <form>
+            <div><input type="text" id="name" name="name" placeholder="이름" required></div>
+             <div><input type="text" id="job" name="job" placeholder="직업" required></div>
+             <div><input type="text" id="education" name="education" placeholder="학위"></div>
+             <div><input type="text" id="github" name="github" placeholder="Github 계정"></div>
+             <div><input type="text" id="instagram" name="instagram" placeholder="Instagram"></div>
+         </form>
+       
+         <div class="button-wrap">
+            <button id="color-button">색상 선택
+              <input id="colorpick" type="color"></button>
+              <p id="demo"></p>
+            <button id="photo-button">사진 선택
+              <input id="photopicker" type='file' accept='image/*' onchange='openFile(event)'></button>
+               <img id='output'>
+      
+              <button type="generate" onclick ="generate()">만들기</button>
+      </section>
+      <section class="content-list"></section>
+
+   </div>  
+</body>
+</html>
+
