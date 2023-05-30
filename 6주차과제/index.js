@@ -67,10 +67,11 @@ function shareURL(){
 
 function shareMessage() {
     Kakao.Share.sendCustom({
-      templateId: 82775,
+      templateId: 94443,
       templateArgs: {
-        title: '아기사자 MBTI TEST',
-        description: '나는 어떤 아기사자 유형일까? 지금 바로 테스트 ㄱㄱ',
+        title: '아기사자 MBTI 테스트',
+        description: '나는 어떤 아기사자일까? 지금 바로 테스트 ㄱㄱ',
       },
     });
   }
+Kakao.init('3db4b67b86e2cd486006026bb6d04636'); // 사용하려는 앱의 JavaScript 키 입력
