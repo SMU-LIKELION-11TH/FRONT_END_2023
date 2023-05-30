@@ -1,3 +1,10 @@
+#main {
+  background-color: white;
+  width: 80%;
+  text-align: center;
+  box-shadow: 5px 5px rgb(0, 0, 0, 0.1);
+}
+
 @font-face {
   font-family: 'NeoDunggeunmoPro-Regular';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2')
@@ -10,11 +17,8 @@
   font-family: 'NeoDunggeunmoPro-Regular';
 }
 
-#main {
-  background-color: white;
-  width: 80%;
-  text-align: center;
-  box-shadow: 5px 5px rgb(0, 0, 0, 0.1);
+body {
+  background-image: url('./img/background.jpeg');
 }
 
 #qna {
@@ -31,4 +35,14 @@
 
 .button-wrap {
   display: grid;
+}
+
+#result {
+  display: none;
+}
+
+#A:hover,
+#B:hover {
+  background-color: black;
+  color: white;
 }
