@@ -1,6 +1,6 @@
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LoginView, LogoutView
 from django.shortcuts import render, redirect
 from django.views import View
 from django.urls import reverse
@@ -14,7 +14,7 @@ from .utils import object_to_User
 class UserCreate(CreateView):
     model = User
     fields = ["username","password","first_name","last_name","email"]
-    template_name = 'hyerin/signup.html'
+    template_name = 'signup.html'
 
     def form_valid(self, form):
         form.instance.password = make_password(form.cleaned_data['password'])
@@ -33,7 +33,7 @@ class UserCreate(CreateView):
 class UserLoginView(LoginView):           # 로그인
     # template_name = 'Account/login_form.html'
     redirect_authenticated_user = True
-    template_name = 'hyerin/login.html'
+    template_name = 'login.html'
 
     def form_valid(self, form):
         return super().form_valid(form)
@@ -70,5 +70,6 @@ class UserDeleteView(LoginRequiredMixin,DeleteView):
 
     def get_success_url(self):
         return reverse("login")
+
 
 

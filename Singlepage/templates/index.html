@@ -1,4 +1,3 @@
-{% load template %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,34 +10,33 @@
     <div class="main_body_wrap">
         <div class="main_height_body_wrap">
             <div class="main_menu">
-                <h2 onClick="location.href=''">BLOG CRUD 연습하기</h2>
+                <h2 onClick="location.href='/'">BLOG CRUD 연습하기</h2>
                 <div class="main_right_menu">
-                    <p onclick="location.href='{% url 'signup' %}'">로그인</p>
-                    <p onclick="location.href='{% url 'signup' %}'">회원가입</p>
+                    {% if user.is_authenticated %}
+                    <p class="userName">환영합니다 {{user.get_full_name}}님</p>
+                    <button type="button" class="logoutBt" onclick="location.href='{% url 'account:logout' %}'">로그아웃</button>
+                      {% else %}
+                        <p onclick="location.href='{% url 'account:login' %}'">로그인</p>
+                        <p onclick="location.href='{% url 'account:signup' %}'">회원가입</p>
+
+                      {% endif %}
                 </div>
             </div>
             <div class="main_body">
                 <div class="main_top_body">
-                    <img src="./../static/img/rin.png"/>
-                    <h1>
-                        <div class="likelion_p">멋사</div>
-                        와 함께 하는<br/>
-                        게시판 CRUD 만들기
-                    </h1>
+                    <img src="./../static/img/hoon.png"/>
+                    <div>
+                        <h1>
+                            <div class="likelion_p">멋사</div>
+                            와 함께 하는<br/>
+                            게시판 CRUD 만들기
+                        </h1>
+                        <button type="button" onclick="location.href='{% url 'post:list' %}'">게시판 만들어보기</button>
+                    </div>
+
                 </div>
             </div>
         </div>
-<!--        <div class="main_height_body_wrap">-->
-<!--            <div class="main_introduce_wrap">-->
-<!--                <div class="main_introduce_info">-->
-<!--                    <div class="main_introduce_imgs">-->
-<!--                        <img src="./../static/img/likelion.png" />-->
-<!--                    </div>-->
-<!--                    <h1>LIKELION</h1>-->
-<!--                    <p>상명대학교 중앙동아리</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
         <div class="footer">
             <img src="./../static/img/LIKELION%20UNIV_brandlogo_white_forweb_221111.png"/>
         </div>

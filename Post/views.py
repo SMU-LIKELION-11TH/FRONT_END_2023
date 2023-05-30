@@ -7,10 +7,13 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Post
 from .utils import Post_to_Json, PostList_to_Json
+
 class PostCreate(LoginRequiredMixin,CreateView):
     model = Post
     fields = ["title","content","image"]
-
+    template_name = "newPost.html"
+    login_url = '/account/user/login/'
+    redirect_field_name = 'redirect_to'
     def form_valid(self, form):
         current_user = self.request.user
         if current_user.is_authenticated:
@@ -30,7 +33,7 @@ class PostCreate(LoginRequiredMixin,CreateView):
 class PostListView(ListView):
     model = Post
     paginate_by = 10
-    template_name = "hyerin/post.html"
+    template_name = "post.html"
 
 class PostListApiView(View):
     def get(self, request, *args, **kwards):
@@ -43,7 +46,7 @@ class PostListApiView(View):
 
 class PostDetailView(DetailView):
     model = Post
-    template_name = "hyerin/postDetail.html"
+    template_name = "postDetail.html"
 
 class PostDetailApiView(View):
     def get(self, request, *args, **kwards):
@@ -57,7 +60,7 @@ class PostDetailApiView(View):
 class PostUpdateView(UpdateView):
     model = Post
     fields = ["title","content","image"]
-    template_name = "hyerin/editPost.html"
+    template_name = "editPost.html"
 
     def form_valid(self, form):
         obj = self.get_object()

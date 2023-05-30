@@ -31,6 +31,7 @@ function createNewComment(){
             location.reload()
         },error: function(data){
             alert('댓글을 등록하지 못했습니다.');
+            location.href = "/account/user/login/"
         }
     })
 }
