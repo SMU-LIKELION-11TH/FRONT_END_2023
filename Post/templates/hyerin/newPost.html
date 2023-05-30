@@ -12,12 +12,12 @@
             <h2 onClick="location.href='./index.html'">BLOG CRUD 연습하기</h2>
             <div class="main_right_menu">
                 {% if user.is_authenticated %}
-            <p>환영합니다 {{user.get_full_name}}님</p>
-          {% else %}
-            <p onclick="location.href='{% url 'account:login' %}'">로그인</p>
-            <p onclick="location.href='{% url 'account:signup' %}'">회원가입</p>
-
-          {% endif %}
+                    <p class="userName">환영합니다 {{user.get_full_name}}님</p>
+                    <button type="button" class="logoutBt" onclick="logout();">로그아웃</button>
+                {% else %}
+                    <p onclick="location.href='{% url 'account:login' %}'">로그인</p>
+                    <p onclick="location.href='{% url 'account:signup' %}'">회원가입</p>
+                {% endif %}
             </div>
         </div>
         <div class="post_body">

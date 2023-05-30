@@ -53,3 +53,21 @@ body{
 .footer > img{
     height: 20px;
 }
+
+.userName{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoutBt{
+    background-color: #f59a3e;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 5px;
+}
