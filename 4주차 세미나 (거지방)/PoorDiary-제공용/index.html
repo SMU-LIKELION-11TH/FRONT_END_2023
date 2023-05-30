@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="practice.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="title">
+        <h1>거지 일기장</h1>
+      </section>
+
+      <section class="form-container">
+        <form>
+          <p>작성자 : <input type="text" id="author" name="author" /></p>
+          <p>사용 금액 : <input type="number" id="payment" name="payment" /></p>
+          <p>한줄 평 : <input type="text" id="comment" name="comment" /></p>
+          <p>
+            거지 점수 :
+            <select id="score" name="score">
+              <option value="1">1점</option>
+              <option value="2">2점</option>
+              <option value="3">3점</option>
+            </select>
+          </p>
+        </form>
+        <button type="submit" onclick="submit()">등록하기</button>
+      </section>
+
+      <section class="button-container">
+        <button onclick="editEvent()">거지 영수증 수정하기</button>
+        <button onclick="deleteEvent()">거지 영수증 삭제하기</button>
+      </section>
+
+      <section class="content-list"></section>
+    </div>
+  </body>
+</html>

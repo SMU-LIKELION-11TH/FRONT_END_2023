@@ -1,0 +1,117 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.main-box {
+  width: 960px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background-color: #f5ebf1;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.title-box .picture {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.title-box-main {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title-box-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6a0883;
+}
+
+.gird-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-gap: 30px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .gird-container {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+}
+
+.content-box {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.content-box h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content-box-text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.content-box-text-title {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.tool-box {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.tool-box h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tool-box-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tool-icon {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+
+.picture {
+  display: block;
+  margin: 10px;
+  border:3px solid darkorchid;
+  border-radius:  50%;
+}
+
+footer {
+  width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e06fef;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 auto;
+}
