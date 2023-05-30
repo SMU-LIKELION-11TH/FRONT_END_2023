@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="create.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <div class="one">
+        <h1>Style One</h1>
+    </div>
+</head>
+<body>
+
+    <div class="container">
+        <section class="form-container">
+            <form>
+                <p><input type="text" id="myname" name="myname" placeholder="이름" /></p>
+                <p><input type="text" id="title" name="title" placeholder="분야" /></p>
+                <p><input type="text" id="school" name="school" placeholder="학교"/></p>
+                <p><input type="text" id="git" name="git" placeholder="깃허브주소" /></p>
+                <p><input type="text" id="instar" name="instar" placeholder="인스타" /></p>
+            </form>
+        </section>
+
+        <section class="button-container">
+            <!-- 이미지 업로드 받기-->
+            
+            <button type="submit" class="select_img" onclick="submit">사진 입력
+                <input id="photo-picker" type="file" accept="image/*">
+              </button>
+   
+            
+            
+            <!-- 색 선택 버튼-->
+            <input type="color" id="select_color">
+
+            <button type="submit" onclick="submit()">배경색</button>
+
+            <!-- 만들기 버튼-->
+            <button type="submit" onclick="submit()">만들기</button>
+            
+            
+            
+            
+        </section>
+        <!-- 지원사격
+        <div class="button-wrap">
+            <button id="color-button">배경색 선택
+              <input id="color-picker" type="color">
+            </button>
+            <span id="color-shower">선택된 색</span>
+            <button id="photo-button">사진 입력
+              <input id="photo-picker" type="file" accept="image/*">
+            </button>
+            <button id="generate-button">생성하기</button>
+        </div>
+    -->
+        <!--
+        <section class="button-container">
+            <button type="submit" onclick="submit()">배경 선택</button>
+            <button type="submit" onclick="submit()">색깔 선택</button>
+            <button type="submit" onclick="submit()">사진 입력</button>
+            <button type="submit" onclick="submit()">만들기</button>
+        </section>
+    -->
+    </div>
+    <section class="content-list"></section>
+    
+</body>
+</html>
