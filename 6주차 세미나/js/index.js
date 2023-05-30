@@ -29,6 +29,7 @@ function next() {
     var imgFileName = result[mbti]['img'];
     var imgPath = imgFolder + imgFileName;
     imgPath = imgPath.replace('image/', ''); // Remove 'image/' from the path
+    resultImg = imgPath;
     $('#result_img').attr('src', imgPath);
   } else {
     $('.progress-bar').attr('style', 'width: calc(100 / 12 *' + num + '%)');
@@ -62,4 +63,33 @@ function shareURL() {
   document.execCommand('copy');
   document.body.removeChild(textarea);
   alert('URL이 복사되었습니다.');
+}
+
+// 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+function shareMessage() {
+  // KaKao API Key
+  Kakao.init('e541ca1877d33ec65761880e01d6ef40');
+
+  // local 등록
+  Kakao.Share.sendDefault({
+    objectType: 'feed',
+    content: {
+      title: '아기사자 MBTI테스트 결과',
+      // MBTI결과값 이미지로 설정
+      imageUrl: 'https://t1.daumcdn.net/cfile/tistory/999B7336600CEE9E14',
+      link: {
+        mobileWebUrl: window.document.location.href,
+        webUrl: window.document.location.href,
+      },
+    },
+    buttons: [
+      {
+        title: 'MBTI 테스트 해보기!',
+        link: {
+          mobileWebUrl: window.document.location.href,
+          webUrl: window.document.location.href,
+        },
+      },
+    ],
+  });
 }
