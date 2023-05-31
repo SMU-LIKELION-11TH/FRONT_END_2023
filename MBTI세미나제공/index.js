@@ -63,16 +63,16 @@ function shareMessage() {
       imageUrl:
         'https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.dongascience.com%2Fnews.php%3Fidx%3D21095&psig=AOvVaw2PDkzt5Ef-5fCN-KbfxKTj&ust=1685610114680000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPj25JKZn_8CFQAAAAAdAAAAABAE',
       link: {
-        mobileWebUrl: 'https://bucolic-mermaid-f69854.netlify.app',
-        webUrl: 'https://bucolic-mermaid-f69854.netlify.app',
+        mobileWebUrl: 'https://dashing-hamster-4e36ef.netlify.app',
+        webUrl: 'https://dashing-hamster-4e36ef.netlify.app',
       },
     },
     buttons: [
       {
         title: '실행하기',
         link: {
-          mobileWebUrl: 'https://bucolic-mermaid-f69854.netlify.app',
-          webUrl: 'https://bucolic-mermaid-f69854.netlify.app',
+          mobileWebUrl: 'https://dashing-hamster-4e36ef.netlify.app',
+          webUrl: 'https://dashing-hamster-4e36ef.netlify.app',
         },
       },
     ],
