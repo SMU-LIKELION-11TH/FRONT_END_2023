@@ -25,6 +25,11 @@ body {
     display: none;
 }
 
+#result {
+    display : none;
+}
+
+
 .qBox {
     background-color: white;
     width: 80%;
@@ -37,12 +42,3 @@ body {
     display: grid;
 }
 
-#result {
-    display : none;
-}
-
-#result {
-    display: none;
-}
-
-#A:hover
