@@ -76,16 +76,16 @@ function shareMessage() {
         "나는 어떤 아기사자일까요? MBTI 기반으로 알아보는 아기사자 테스트",
       imageUrl: "./image/ESFJ.png",
       link: {
-        mobileWebUrl: "http://127.0.0.1:5500/index.html",
-        webUrl: "http://127.0.0.1:5500/index.html",
+        mobileWebUrl: "https://thunderous-hummingbird-2dd25f.netlify.app",
+        webUrl: "https://thunderous-hummingbird-2dd25f.netlify.app",
       },
     },
     buttons: [
       {
         title: "웹으로 보기",
         link: {
-          mobileWebUrl: "http://127.0.0.1:5500/index.html",
-          webUrl: "http://127.0.0.1:5500/index.html",
+          mobileWebUrl: "https://thunderous-hummingbird-2dd25f.netlify.app",
+          webUrl: "https://thunderous-hummingbird-2dd25f.netlify.app",
         },
       },
     ],
