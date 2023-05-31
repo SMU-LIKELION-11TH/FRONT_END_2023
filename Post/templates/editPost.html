@@ -14,7 +14,7 @@
     <div class="main_right_menu">
       {% if user.is_authenticated %}
           <p class="userName">환영합니다 {{user.get_full_name}}님</p>
-          <button type="button" class="logoutBt" onclick="location.href='{% url 'account:logout' %}'">로그아웃</button>
+          <button type="button" class="logoutBt" onclick="logout();">로그아웃</button>
       {% else %}
           <p onclick="location.href='{% url 'account:login' %}'">로그인</p>
           <p onclick="location.href='{% url 'account:signup' %}'">회원가입</p>
@@ -46,4 +46,5 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="{% static 'js/editPost.js' %}"></script>
+<script src="{% static 'js/logout.js' %}"></script>
 </html>

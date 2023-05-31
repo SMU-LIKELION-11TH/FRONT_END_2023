@@ -14,9 +14,16 @@ h2{
     flex-direction: column;
 }
 
+.post_body2{
+    width: 80vw;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .post_list_wrap{
     width: 80vw;
-    height: 90%;
+    max-height: 423px;
     margin: 20px auto 0 auto;
     border-top: 3px solid white;
     border-bottom: 2px solid white;
@@ -35,6 +42,7 @@ h2{
 
 .post_bt_wrap{
     width: 80vw;
+    height: 100%;
     margin: 5px auto 0 auto;
 }
 
@@ -83,7 +91,7 @@ h2{
 
 .post_detail_content{
     width: 100%;
-    height: 80%;
+    height: 300px;
     overflow-y: scroll;
     border-radius: 15px;
     border: 1px solid white;
