@@ -1,0 +1,55 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>로그인</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/login.js' %}"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="login_body">
+        <!--이부분이 base !! -->
+        <div class="main_menu">
+            <h2 onClick="location.href='{% url 'single_page:main' %}'">BLOG CRUD 연습하기</h2>
+            <div class="main_right_menu">
+                {% if user.is_authenticated %}
+
+                <p>환영합니다 {{user.get_full_name}}님</p>
+              {% else %}
+                <p onclick="location.href='{% url 'account:login' %}'">로그인</p>
+                <p onclick="location.href='{% url 'account:signup' %}'">회원가입</p>
+
+              {% endif %}
+            </div>
+        </div>
+        <!-- 요기까지 -->
+        <form action = "{% url 'account:login' %}" method = "post">
+            {% csrf_token %}
+            <div class="login_body_box">
+                <h1>- 로그인 -</h1>
+                <div class="login_body_id">
+                    <h3>아이디</h3>
+                    <input type="email" id="username" name = "username" placeholder="아이디 입력하세요" />
+                </div>
+                <div class="login_body_pw">
+                    <h3>비밀번호</h3>
+                    <input type="password" id="password" name = "password" placeholder="비밀번호 입력하세요"/>
+                </div>
+                <div class="login_bt_wrap">
+                    <button type="button" onClick="onSubmitLogin_cbv();">로그인</button>
+                    <input id = "form_submit" type = "submit" style = "display:none">
+                </div>
+            </div>
+        </form>
+        <div class="footer">
+            <img src="{% static 'img/LIKELION%20UNIV_brandlogo_white_forweb_221111.png' %}"/>
+        </div>
+    </div>
+</body>
+</html>
