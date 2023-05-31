@@ -1,0 +1,25 @@
+#main {
+    font-size: 50px;
+}
+
+.logo {
+    width: 35%;
+    height: 35%;
+}
+
+.main  {
+    border: 2px solid blue;
+    width: 250px;
+    border-radius: 5%;
+}
+
+.row {
+    flex: content;
+}
+
+.col {
+    background-color: antiquewhite;
+    width: auto;
+    border-radius: 30%;
+    width: auto;
+}
