@@ -1,0 +1,84 @@
+body {
+  
+  background-color: rgb(195, 172, 199);
+}
+
+.box {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.container-flex {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 70px 100px 100px 10px;
+}
+
+.item-flex-img {
+  flex-basis: auto;
+  margin: 0;
+}
+
+.item-flex {
+  flex-basis: auto;
+  align-self: center;
+  text-align: center;
+}
+
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: stretch;
+  margin: 0 100px 100px 100px;
+}
+
+.item-grid {
+  justify-self: stretch;
+}
+
+
+.content-box-text-title {
+  color: blue;
+  font-weight: bold;
+  }
+
+.content-box-text {
+  font-size: 20px;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.tool-icon {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+img { 
+  object-fit: cover; 
+  width: 250px;
+}
+
+.info { background-color: lightgrey; }
+
+.license { background-color: lightyellow; }
+
+.academic { background-color: lightpink; }
+
+.career { background-color: lightblue; }
+
+
+
+footer { margin:0 auto; text-align:center; }
