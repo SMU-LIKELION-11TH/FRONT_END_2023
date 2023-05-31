@@ -1,0 +1,132 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.container {
+    width: 1200px; 
+    margin: 0 auto;
+}
+
+/* nav bar */
+
+nav {
+    height: 80px;
+    background-color: #00ffff;
+    line-height: 80px;
+}
+
+.logo {
+    font-size: 50px;
+    float: left;
+    margin: 0;
+}
+
+.nav-menu {
+    float: right;
+}
+
+.nav-btn {
+    list-style-type: none;
+    margin: 0;   
+}
+
+ul.nav-btn > li {
+    float: left;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* header */
+
+.hd {
+    position: relative;
+    height: 700px;
+    text-align: center;
+}
+
+.hd-title {
+    font-size: 85px;
+    margin-top: 0;
+    padding-top: 150px;
+    margin-bottom: 20px;
+}
+
+.hd-content {
+    font-size: 30px;
+}
+
+.hd::before {
+    content:"";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url(./lion.jfif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hd .container {
+    position: relative;
+    color: #000000;
+}
+
+/* section */
+
+.sec {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f0f8ff;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.sec article {
+    float: left;
+    width: 300px;
+    margin-right: 100px;
+    font-size: 30px;
+}
+
+.sec article :last-child {
+    margin-right: 0;
+}
+
+.sec article img {
+    width: 100%;
+    height: auto;
+}
+
+.ar-img {
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+}
+
+.sec::after{
+    content: "";
+    display: block;
+    clear: both;
+}

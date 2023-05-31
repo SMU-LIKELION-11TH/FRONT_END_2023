@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/ca234a45bc.js" crossorigin="anonymous"></script>
+    <title>Business Card Maker</title>
+    <script src="./event.js" defer></script>
+</head>
+<body style="background-color:#87ceeb">
+    <header class="header">Business Card Maker</header>
+
+    <div class="container">
+        <form class="form" onsubmit="createCard(event)">
+            <div class="text">
+                <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="이름"
+                required/>
+                
+                <input
+                type="text"
+                id="job"
+                name="job"
+                placeholder="직업"
+                required/>
+
+                <input
+                type="text"
+                id="major"
+                name="major"
+                placeholder="전공"
+                required/>
+
+                <input
+                type="text"
+                id="github"
+                name="github"
+                placeholder="깃허브 아이디"
+                required/>
+
+                <input
+                type="text"
+                id="instagram"
+                name="instagram"
+                placeholder="인스타그램 아이디"
+                required/>
+            </div>
+            <div class="btn">
+                <button>배경 선택</button>
+                <input type="color" id="Bgcolor" />
+                <label for="file">
+                    <div class="btn-upload">파일</div>
+                  </label>
+                  <input type="file" name="file" id="file">
+                <button type="submit">Create Card</button>
+            </div>
+
+        </form>
+        <div class="card_container">
+            <div class="card">
+                <div class="card_image">
+                    <img src="./profile.jpg" alt="" class="profile" />
+                    <h3>정채운</h3>
+                </div>
+                <div class="card-text">
+                    <div class="school">
+                        <h2>프론트엔드 개발자</h2>
+                        <p><i class="fa-solid fa-building"></i>상명대학교 컴퓨터과학과</p>
+                    </div>
+                    <div class="sns">
+                        <p><i class="fa-brands fa-instagram"></i>https://github.com/wooren</p>
+                        <p><i class="fa-brands fa-github"></i>codns_99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
