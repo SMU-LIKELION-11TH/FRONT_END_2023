@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+}
+
+.header {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    background-color: #faebd7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid black
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text input {
+    margin-bottom: 5px;
+    padding: 7px;
+    width: 250px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#file{
+    display: none;
+}
+.btn-upload {
+    width: 60px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: rgb(77,77,77);
+      color: #fff;
+    }
+}
+
+.btn button{
+    border: 1px solid black;
+    background-color: rgba(0,0,0,0);
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height: 30px;
+}
+
+/* card */
+
+.card {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    flex: 0 0 500px;
+}
+
+.card_container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.profile {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.school {
+    margin-bottom: 30px;
+}
+
+.sns {
+    margin:0;
+}
+
