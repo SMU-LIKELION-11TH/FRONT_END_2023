@@ -1,0 +1,34 @@
+.title-box {
+  display:flex;
+  justify-content: space-between;
+}
+
+.title-warp {
+  position: relative;
+  top: 175px;
+  right: 200px;
+}
+
+.content-box-text-title {
+  color: black;
+  font-weight: bold;
+}
+
+.gird-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/*.content-box-text {
+}*/
+
+.tool-box-content {
+  display:flex;
+  justify-content: center;
+}
+
+.tool-icon {
+  width: 100px;
+  height: 100px;
+}
