@@ -1,0 +1,73 @@
+/*공통 css*/
+html, body, h2, p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.main_menu{
+    position: fixed;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 40px 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_menu > h2{
+    cursor: pointer;
+    color: orange;
+    margin-left: 20px;
+}
+
+.main_right_menu{
+    display: flex;
+}
+
+.main_right_menu > p{
+    cursor: pointer;
+    color: white;
+}
+
+.main_right_menu > p:last-child{
+    margin-left: 15px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0px 0px 20px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > img{
+    height: 20px;
+}
+
+.userName{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoutBt{
+    background-color: #f59a3e;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 5px;
+}

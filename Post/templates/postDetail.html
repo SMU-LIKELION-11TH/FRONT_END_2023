@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>게시판 목록</title>
+  <link rel="stylesheet" href="{% static 'css/post.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="post_body_wrap">
+  <div class="main_menu">
+    <h2 onClick="location.href='/'">BLOG CRUD 연습하기</h2>
+    <div class="main_right_menu">
+      {% if user.is_authenticated %}s
+            <p class="userName">환영합니다 {{user.get_full_name}}님</p>
+            <button type="button" class="logoutBt" onclick="logout();">로그아웃</button>
+          {% else %}
+            <p onclick="location.href='{% url 'account:login' %}'">로그인</p>
+            <p onclick="location.href='{% url 'account:signup' %}'">회원가입</p>
+
+          {% endif %}
+    </div>
+  </div>
+  <div class="post_body">
+    <div class="post_detail_wrap">
+      <div class="post_detail_title">
+        <h1>{{post.title}}</h1>
+      </div>
+      <div class="post_detail_info">
+        <p>{{post.author.get_full_name}}</p>
+        <p>{{post.created_at|date:'Y-m-d H:i'}}</p>
+      </div>
+      <div class="post_detail_content">
+        <p>{{post.content}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="post_bt_wrap">
+    {% if user.is_authenticated and user == post.author %}
+    <button type="button" onclick="moveEditPost(id);">
+      수정하기
+    </button>
+    <button type="button" onclick="deletePost(id);">
+      삭제하기
+    </button>
+    {% endif %}
+  </div>
+
+  <div class="post_detail_comment_wrap">
+    {% for comment in post.comment_set.all %}
+      <div class="post_detail_comment_box">
+        <div>
+          <p id="userName">{{comment.author.get_full_name}} ({{comment.created_at|date:'Y-m-d H:i'}})</p>
+          <p id="userComment">{{comment.content}}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="post_detail_newComment_wrap">
+    <div class="post_detail_newComment_box">
+      <input type="text" id="commentInput" placeholder="댓글을 입력하세요"/>
+      <button type="button" onclick="createNewComment();">등록</button>
+    </div>
+  </div>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="{% static 'js/postDetail.js' %}"></script>
+<script src="{% static 'js/logout.js' %}"></script>
+</html>
