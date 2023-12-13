@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="index.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <title>명함만들기</title>
+  </head>
+  <body>
+    <h1>👩‍💼 Business Card Maker 👨‍💼</h1>
+    <div class="container">
+      <div class="item">
+          <section class="box">
+            
+              <div class="form-container">
+                  <form>
+                  <p><input type="text" id="name" name="name" placeholder="이름" /></p>
+                  <p><input type="text" id="part" name="part" placeholder="부서" /></p>
+                  <p><input type="text" id="school" name="school" placeholder="학교 및 전공" /></p>
+                  <p><input type="text" id="github" name="github" placeholder="gitHub 주소" /></p>
+                  <p><input type="text" id="instagram" name="instagram" placeholder="instagram 주소" /></p>
+                  
+                  </form>
+                  </div>
+
+              <div class="button-container">
+                
+                <button onclick="selectedColor()">배경 선택</button>
+              
+                <input type="color" id="selectedColor">
+              
+                <button class="imgBtn">
+                  <label for="imgFile">
+                    사진 입력
+                  </label>
+                </button>
+                <input type='file' id="imgFile" accept="'image/*" onchange='openFile(event)'><img id='output'>
+                
+                <button type="button" id="submitBtn" onclick="submit()">만들기</button>
+
+              </div>
+          </section>
+        </div>
+
+        <div class="item">
+          <section class="content-list"></section>
+        </div>
+
+    </div>
+  </body>
+</html>
